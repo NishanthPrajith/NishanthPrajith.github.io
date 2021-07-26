@@ -1,8 +1,11 @@
 import './navbar.css';
 import { useState } from 'react';
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 export default function NavBar() {
-
+    
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     const [navBarClicked, setClicked] = useState(false);
 
     function openNav() {
@@ -33,7 +36,8 @@ export default function NavBar() {
                     </div>
                 </div>
 
-                <div>
+                <div onMouseEnter={() => cursorChangeHandler("nav")}
+          onMouseLeave={() => cursorChangeHandler("")}>
                     <div onClick={navBarClicked ? closeNav : openNav} className = {navBarClicked ? "menuActive" : "menu"}>
                         <div className = "line"></div>
                         <div className = "line"></div>
