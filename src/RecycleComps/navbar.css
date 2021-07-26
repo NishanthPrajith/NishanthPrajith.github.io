@@ -1,0 +1,127 @@
+nav {
+    width: 100%;
+    display: grid;
+    height: 6vh;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.sidenavNone {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: grid;
+    padding-top: 60px;
+}
+
+.hamburger {
+    display: grid;
+    float: right;
+    justify-content: flex-end;
+    padding-right: 6%;
+}
+
+.logo {
+    padding-left: 6%;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.menu {
+    height: 17px;
+    position: fixed;
+    z-index: 2;
+    width: 30px;  
+    display: grid;
+    transition: all .2s ease-in-out;
+}
+
+
+.menuActive{
+    height: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 30px;
+    display: grid;
+    transition: all .2s ease-in-out;
+}
+
+.menu .line {
+    height: 3px;
+    width: 100%;
+    background-color: #686464;
+    transition: all .2s ease-in-out;
+    border-radius: 100px;
+}
+
+
+.menuActive .line:nth-child(1) {
+    transform: rotate(45deg) translateY(-7px);
+    transform-origin: left top;
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 100px;
+    transition: all .2s ease-in-out;
+}
+
+.menuActive .line:nth-child(2) {
+    transform: rotate(-45deg) translateY(7px);
+    transform-origin: left bottom;
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 100px;
+    transition: all .2s ease-in-out;
+}
+
+.sidenav {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: 100%;
+    padding-left: 15%;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
