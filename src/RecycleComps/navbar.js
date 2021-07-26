@@ -21,11 +21,16 @@ export default function NavBar() {
                 <p>np.</p>
             </div>
             <div className = "hamburger">
-                <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
-                    <a href="www.google.com">About</a>
-                    <a href="www.google.com">Services</a>
-                    <a href="www.google.com">Clients</a>
-                    <a href="www.google.com">Contact</a>
+                <div className={navBarClicked ? "main" : ""}>
+                    <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
+                        <div>
+                            <p>Menu</p>
+                            <a href="www.google.com">Home</a>
+                            <a href="www.google.com">About Me</a>
+                            <a href="www.google.com">Projects</a>
+                            <a href="www.google.com">Contact Me</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
