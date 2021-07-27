@@ -2,6 +2,7 @@ import './navbar.css';
 import { useState } from 'react';
 import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     
@@ -27,11 +28,20 @@ export default function NavBar() {
                 <div className={navBarClicked ? "main" : ""}>
                     <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
                         <div>
-                            <p>Menu</p>
-                            <a href="www.google.com">Home</a>
-                            <a href="www.google.com">About Me</a>
-                            <a href="www.google.com">Projects</a>
-                            <a href="www.google.com">Contact Me</a>
+                            <p className = "text">Menu</p>
+                            <Link to = '/' onClick = {closeNav}>
+                                <p className = "links">Home</p>
+                            </Link>
+                            <Link to = '/about' onClick = {closeNav}>
+                                <p className = "links">About Me</p>
+                            </Link>
+                            <Link to = '/'>
+                                <p className = "links" onClick = {closeNav}>Home</p>
+                            </Link>
+                            <Link to = '/'>
+                                <p className = "links" onClick = {closeNav}>Home</p>
+                            </Link>
+                            
                         </div>
                     </div>
                 </div>

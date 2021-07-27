@@ -1,24 +1,35 @@
 import './App.css';
+import {
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
+
+import MainLoader from './loading/main/mainloader';
 
 import NavBar from './RecycleComps/navbar';
+import Home from './HomeComps/home';
+import About from './AboutComps/about';
 
-import { useContext } from "react";
 import DotRing from "./RecycleComps/DotRing/DotRing";
-import { MouseContext } from "./context/mouse-context";
+
+import { AnimatePresence } from 'framer-motion';
+
 
 function App() {
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  const location = useLocation();
   return (
     <div className="App">
+
       <DotRing />
-      <NavBar></NavBar>
-      <h1>Test react upload app</h1>
-      <div
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        >
-          <h1>Hover over me</h1>
-        </div>
+
+      <AnimatePresence>
+        <NavBar></NavBar>
+        <Switch location = {location} key = {location.key}>
+          <Route exact path = "/" component = {Home}></Route>
+          <Route path = "/about" component = {About}></Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }
