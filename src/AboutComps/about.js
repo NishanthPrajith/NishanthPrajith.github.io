@@ -13,14 +13,14 @@ export default function About() {
             opacity: 1,
             transition: {
                 ease: "easeInOut",
-                default: { delay: 2, duration: 2 },
+                default: { delay: 3, duration: 2 },
             },
         },
     }
 
 
     return (
-        <div>
+        <div style = {{overflow: "none"}}>
             <MoveFrom />
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <h1>About Page</h1>

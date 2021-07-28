@@ -10,7 +10,7 @@ export default function MainLoader() {
             height: "0vh",
             transition: {
                 type: "ease-in-out",
-                default: { delay: 2, duration: 2 },
+                default: { delay: 2.5, duration: 2 },
             },
         },
         "done": {
@@ -24,11 +24,14 @@ export default function MainLoader() {
             display: "block"
         },
         "final": {
-            display: "none",
+            display: "block",
             transition: {
                 type: "ease-in-out",
-                default: { delay: 3.5, duration: 0 },
+                default: { delay: 4, duration: 0 },
             },
+            transitionEnd: {
+                display: "none"
+            }
         }
     }
 

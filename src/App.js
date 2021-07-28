@@ -20,11 +20,10 @@ function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <MainLoader />
 
       <DotRing />
 
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <NavBar></NavBar>
         <Switch location = {location} key = {location.key}>
           <Route exact path = "/" component = {Home}></Route>

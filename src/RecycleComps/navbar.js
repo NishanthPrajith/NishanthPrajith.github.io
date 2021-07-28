@@ -31,10 +31,17 @@ export default function NavBar() {
                 default: { delay: 2, duration: 1 },
             },
         },
+        "exit" : {
+            opacity: 0,
+            transition: {
+                ease: "easeIn",
+                default: { delay: 0.1, duration: 3 },
+            },
+        }
     }
 
     return (
-        <motion.nav variants = {animation} initial = "initial" animate = "final">
+        <motion.nav variants = {animation} initial = "initial" animate = "final" exit = "exit">
             <div className = "logo">
                 <p>np.</p>
             </div>
