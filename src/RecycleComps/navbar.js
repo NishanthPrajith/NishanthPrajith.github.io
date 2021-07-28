@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
     
@@ -19,8 +20,21 @@ export default function NavBar() {
         setClicked(false); 
     }
 
+    const animation = {
+        "initial" : {
+            opacity: 0,
+        },
+        "final" : {
+            opacity: 1,
+            transition: {
+                ease: "easeIn",
+                default: { delay: 2, duration: 1 },
+            },
+        },
+    }
+
     return (
-        <nav>
+        <motion.nav variants = {animation} initial = "initial" animate = "final">
             <div className = "logo">
                 <p>np.</p>
             </div>
@@ -54,6 +68,6 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-        </nav>
+        </motion.nav>
     )
 }
