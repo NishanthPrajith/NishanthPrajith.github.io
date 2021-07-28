@@ -1,6 +1,5 @@
 
 import './about.css'
-import MoveFrom from '../loading/pageLoading/pageChange';
 import { motion } from 'framer-motion';
 
 export default function About() {
@@ -13,7 +12,7 @@ export default function About() {
             opacity: 1,
             transition: {
                 ease: "easeInOut",
-                default: { delay: 3, duration: 2 },
+                default: { delay: 1.5, duration: 1 },
             },
         },
     }
@@ -21,7 +20,6 @@ export default function About() {
 
     return (
         <div style = {{overflow: "none"}}>
-            <MoveFrom />
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <h1>About Page</h1>
             </motion.div>

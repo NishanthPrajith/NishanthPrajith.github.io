@@ -1,7 +1,7 @@
-import MoveFrom from "../loading/pageLoading/pageChange";
-import { motion } from "framer-motion";
 
-export default function Home() {
+import { motion } from 'framer-motion';
+
+export default function About() {
 
     const animation = {
         "initial" : {
@@ -11,15 +11,16 @@ export default function Home() {
             opacity: 1,
             transition: {
                 ease: "easeInOut",
-                default: { delay: 4, duration: 1 },
+                default: { delay: 1.5, duration: 1 },
             },
         },
     }
 
+
     return (
-        <div>
+        <div style = {{overflow: "none"}}>
             <motion.div variants = {animation} initial = "initial" animate = "final">
-                <h1>Home Page</h1>
+                <h1>Contact Page</h1>
             </motion.div>
         </div>
     )

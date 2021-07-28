@@ -11,8 +11,6 @@ export default function NavBar() {
     const [navBarClicked, setClicked] = useState(false);
 
     function openNav() {
-        console.log("Opened");
-        console.log(navBarClicked);
         setClicked(true);
     }
 
@@ -28,7 +26,24 @@ export default function NavBar() {
             opacity: 1,
             transition: {
                 ease: "easeIn",
-                default: { delay: 2, duration: 1 },
+                delay: 1.5, 
+                duration: 1,
+            },
+        },
+    }
+
+    const animationTwo = {
+        "initial" : {
+            width: "0",
+            height: "0"
+        },
+        "final" : {
+            width : "50%",
+            height: "100%",
+            transition: {
+                ease: "easeIn",
+                delay: 1.5, 
+                duration: 4,
             },
         },
     }
@@ -40,7 +55,7 @@ export default function NavBar() {
             </div>
             <div className = "hamburger">
                 <div className={navBarClicked ? "main" : ""}>
-                    <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
+                    <motion.div className={navBarClicked ? "sidenav" : "sidenavNone"} variants = {animationTwo} initial = "initial" animate = "final">
                         <div>
                             <p className = "text">Menu</p>
                             <Link to = '/' onClick = {closeNav}>
@@ -49,15 +64,15 @@ export default function NavBar() {
                             <Link to = '/about' onClick = {closeNav}>
                                 <p className = "links">About Me</p>
                             </Link>
-                            <Link to = '/'>
-                                <p className = "links" onClick = {closeNav}>Home</p>
+                            <Link to = '/projects'>
+                                <p className = "links" onClick = {closeNav}>Projects</p>
                             </Link>
-                            <Link to = '/'>
-                                <p className = "links" onClick = {closeNav}>Home</p>
+                            <Link to = '/contactme'>
+                                <p className = "links" onClick = {closeNav}>Contact Me</p>
                             </Link>
                             
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div onMouseEnter={() => cursorChangeHandler("nav")}

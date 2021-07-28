@@ -6,69 +6,48 @@ import { motion } from 'framer-motion'
 function MoveFrom() {
 
 
-    const testVar = {
+    const circle = {
         "initial" : {
-            height: "0",
+            width: "0vh",
+            height: "0vh",
         },
         "animate": {
-            height: "100vh",
-            borderBottomLeftRadius: "0%",
-            borderBottomRightRadius: "0%",
+            width: "200vh",
+            height: "200vh",
             transition: {
-                default: {duration: 2.3}
+                default: {delay: 0.1, duration: 1},
+                ease : [0.6, 0.01, -0.05, 0.95]
             },
             transitionEnd: {
-                opacity: "0",
                 display: "none"
             }
         }
     }
 
-    const testVarTwo = {
+    const CircleTwo = {
         "initial" : {
-            height: "0",
+            width: "0vh",
+            height: "0vh",
         },
         "animate": {
-            height: "100vh",
-            
-            borderBottomLeftRadius: "0%",
-            borderBottomRightRadius: "0%",
+            width: "200vh",
+            height: "200vh",
             transition: {
-                default: {delay: 0.3, duration: 2}
+                default: {duration: 1},
+                ease : [0.6, 0.01, -0.05, 0.95]
             },
             transitionEnd: {
                 display: "none"
             }
-        },
-    }
-
-    const testVarThree = {
-        "initial" : {
-            height: "0",
-        },
-        "animate": {
-            height: "100vh",
-            
-            borderBottomLeftRadius: "0%",
-            borderBottomRightRadius: "0%",
-            transition: {
-                default: {duration: 2.3}
-            },
-            transitionEnd: {
-                display: "none"
-            }
-        },
+        }
     }
 
     return (
         <div>
-            <motion.div variants = {testVar} initial = "initial" animate = "animate" className = "testLoader">
+            <motion.div className = "background" variants = {CircleTwo} initial = "initial" animate = "animate">
             </motion.div>
+            <motion.div className = "circle" variants = {circle} initial = "initial" animate = "animate">
 
-            <motion.div variants = {testVarThree} initial = "initial" animate = "animate" className = "testLoaderThree">
-            </motion.div>
-
-            <motion.div variants = {testVarTwo} initial = "initial" animate = "animate" className = "testLoaderTwo">
             </motion.div>
 
         </div>
