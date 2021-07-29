@@ -1,5 +1,5 @@
-import MoveFrom from "../loading/pageLoading/pageChange";
 import { motion } from "framer-motion";
+import './home.css';
 
 export default function Home() {
 
@@ -16,10 +16,11 @@ export default function Home() {
         },
     }
 
+
     return (
         <div>
             <motion.div variants = {animation} initial = "initial" animate = "final">
-                <h1>Home Page</h1>
+                <p>Home Page</p>
             </motion.div>
         </div>
     )

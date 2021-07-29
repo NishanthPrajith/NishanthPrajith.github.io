@@ -32,7 +32,6 @@ function App() {
         <NavBar></NavBar>
         <Switch location = {location} key = {location.key}>
           <Route exact path = "/">
-            <MainLoader />
             <Home />
           </Route>
           <Route path = "/about">

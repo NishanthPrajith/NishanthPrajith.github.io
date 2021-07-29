@@ -3,11 +3,11 @@ import { useState } from 'react';
 import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 
 export default function NavBar() {
     
-    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const {cursorType, cursorChangeHandler } = useContext(MouseContext);
     const [navBarClicked, setClicked] = useState(false);
 
     function openNav() {
@@ -32,22 +32,6 @@ export default function NavBar() {
         },
     }
 
-    const animationTwo = {
-        "initial" : {
-            width: "0",
-            height: "0"
-        },
-        "final" : {
-            width : "50%",
-            height: "100%",
-            transition: {
-                ease: "easeIn",
-                delay: 1.5, 
-                duration: 4,
-            },
-        },
-    }
-
     return (
         <motion.nav variants = {animation} initial = "initial" animate = "final">
             <div className = "logo">
@@ -55,24 +39,31 @@ export default function NavBar() {
             </div>
             <div className = "hamburger">
                 <div className={navBarClicked ? "main" : ""}>
-                    <motion.div className={navBarClicked ? "sidenav" : "sidenavNone"} variants = {animationTwo} initial = "initial" animate = "final">
+                    <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
                         <div>
                             <p className = "text">Menu</p>
                             <Link to = '/' onClick = {closeNav}>
-                                <p className = "links">Home</p>
+                                <div className = "marque">
+                                    <p className = "links">Home<br></br> Home</p>
+                                </div>
                             </Link>
                             <Link to = '/about' onClick = {closeNav}>
-                                <p className = "links">About Me</p>
+                                <div className = "marque">
+                                    <p className = "links">About Me<br></br> About Me</p>
+                                </div>
                             </Link>
-                            <Link to = '/projects'>
-                                <p className = "links" onClick = {closeNav}>Projects</p>
+                            <Link to = '/projects' onClick = {closeNav}>
+                                <div className = "marque">
+                                    <p className = "links">Projects<br></br> Projects</p>
+                                </div>
                             </Link>
-                            <Link to = '/contactme'>
-                                <p className = "links" onClick = {closeNav}>Contact Me</p>
+                            <Link to = '/contactme' onClick = {closeNav}>
+                                <div className = "marque">
+                                    <p className = "links">Contact Me<br></br> Contact Me</p>
+                                </div>
                             </Link>
-                            
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
 
                 <div onMouseEnter={() => cursorChangeHandler("nav")}
