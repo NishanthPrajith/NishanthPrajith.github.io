@@ -1,0 +1,10 @@
+.mainContainer {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+.mainContainer p {
+	margin: 10% 0;
+	font-size: 6rem;
+}

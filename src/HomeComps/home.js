@@ -23,7 +23,76 @@ export default function Home() {
             <Helmet>
                 <title>Home Page | Nishanth Prajith</title>
             </Helmet>
-            <motion.div variants = {animation} initial = "initial" animate = "final">
+            <motion.div className = "mainContainer" variants = {animation} initial = "initial" animate = "final">
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
+
+                <p>Home Page</p>
+                <p>Home Page</p>
+                <p>Home Page</p>
                 <p>Home Page</p>
             </motion.div>
         </div>

@@ -38,7 +38,7 @@ export default function NavBar() {
                 <p>np.</p>
             </div>
             <div className = "hamburger">
-                <div className={navBarClicked ? "main" : ""}>
+                <div className={navBarClicked ? "mainMain" : ""}>
                     <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
                         <div>
                             <p className = "text">Menu</p>
