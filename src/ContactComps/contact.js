@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
 
@@ -19,6 +20,9 @@ export default function About() {
 
     return (
         <div style = {{overflow: "none"}}>
+            <Helmet>
+                <title>Contact Me Page | Nishanth Prajith</title>
+            </Helmet>
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <h1>Contact Page</h1>
             </motion.div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import './home.css';
+import Helmet from "react-helmet";
 
 export default function Home() {
 
@@ -18,7 +19,10 @@ export default function Home() {
 
 
     return (
-        <div>
+        <div> 
+            <Helmet>
+                <title>Home Page | Nishanth Prajith</title>
+            </Helmet>
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <p>Home Page</p>
             </motion.div>

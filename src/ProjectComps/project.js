@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 export default function Project() {
 
@@ -19,6 +20,9 @@ export default function Project() {
 
     return (
         <div style = {{overflow: "none"}}>
+            <Helmet>
+                <title>Projects Page | Nishanth Prajith</title>
+            </Helmet>
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <h1>Project Page</h1>
             </motion.div>
