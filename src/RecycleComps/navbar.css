@@ -24,7 +24,6 @@ nav {
     display: grid;
     float: right;
     justify-content: flex-end;
-    padding-right: 8%;
 }
 
 .logo {
@@ -37,8 +36,10 @@ nav {
 .menu {
     height: 17px;
     position: fixed;
+    right: 0;
     z-index: 2;
-    width: 25px;  
+    width: 25px; 
+    padding-right: 4%; 
     display: grid;
     justify-items: flex-end;
     transition: all .2s ease-in-out;
@@ -47,9 +48,11 @@ nav {
 .menuActive{
     height: 20px;
     position: fixed;
+    right: 0;
     z-index: 2;
     width: 30px;
     display: grid;
+    padding-right: 4%; 
     transition: all .2s ease-in-out;
 }
 
