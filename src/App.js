@@ -13,6 +13,7 @@ import Home from './HomeComps/home';
 import About from './AboutComps/about';
 import Project from './ProjectComps/project'
 import Contact from './ContactComps/contact'
+import Footer from './footerComps/footer'
 
 import DotRing from "./RecycleComps/DotRing/DotRing";
 
@@ -97,6 +98,7 @@ function App() {
           </Switch>
         </AnimatePresence>
       </div>
+      <Footer />
       <Version versionNumber = {"v1.0"} />
     </div>
   );

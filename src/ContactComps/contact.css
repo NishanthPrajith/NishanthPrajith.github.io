@@ -1,0 +1,46 @@
+.contact {
+	width: 100%;
+	height: 87.5vh;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 10% 90%;
+}
+
+.contact div h1 {
+	font-size: 4.5rem;
+	font-weight:  1000;
+	margin-bottom: 2%;
+}
+
+.message {
+	width: 60%;
+	margin-bottom: 5%;
+	font-size: 1.4rem;
+}
+
+
+.buttonFill {
+	width: 6vh;
+	height: 6vh;
+	padding: 0%;
+	display: grid;
+	border-radius: 50px;
+	align-items: center;
+	background-color: #EAEAEB;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+
+.button {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:  1.1rem;
+	margin: 0% 14%;
+	display: inline-block;
+}
+
+.header {
+	writing-mode: vertical-rl;
+	transform: scale(-1, -1);;
+}
