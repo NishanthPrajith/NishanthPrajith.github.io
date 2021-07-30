@@ -3,6 +3,7 @@ footer {
 	display: grid;
 	height: 6vh;
 	width: 100%;
+	margin-top: 3vh;
 	justify-items: center;
 	align-items: center;
 	white-space: nowrap;

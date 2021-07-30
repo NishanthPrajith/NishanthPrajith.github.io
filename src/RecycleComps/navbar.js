@@ -12,10 +12,12 @@ export default function NavBar() {
 
     function openNav() {
         setClicked(true);
+        console.log("opened");
     }
 
     function closeNav() {
-        setClicked(false); 
+        setClicked(false);
+        console.log("closed");
     }
 
     const animation = {
