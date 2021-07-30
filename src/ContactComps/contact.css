@@ -8,7 +8,7 @@
 
 .contact div h1 {
 	font-size: 4.5rem;
-	font-weight:  1000;
+	font-weight:  700;
 	margin-bottom: 2%;
 }
 
@@ -16,6 +16,7 @@
 	width: 60%;
 	margin-bottom: 5%;
 	font-size: 1.4rem;
+	font-weight: 100;
 }
 
 
@@ -42,5 +43,6 @@
 
 .header {
 	writing-mode: vertical-rl;
+	font-size: 0.9rem;
 	transform: scale(-1, -1);;
 }

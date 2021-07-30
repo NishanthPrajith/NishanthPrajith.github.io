@@ -48,7 +48,6 @@ function App() {
 
   //set the height of the body.
 
-
   //Set the height of the body to the height of the scrolling div
 
   // Scrolling

@@ -31,7 +31,7 @@ export default function NavBar() {
             },
         },
     }
-
+    
     return (
         <motion.nav variants = {animation} initial = "initial" animate = "final">
             <div className = "logo">

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 .App, .scroll {
   width: 100%;
   padding: 0;
@@ -10,6 +9,7 @@
   margin: 0;
   color: #000000;
   font-family: "DM Sans",sans-serif;
+  font-size: 400;
 }
 
 .versionNumber p {

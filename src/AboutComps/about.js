@@ -20,12 +20,38 @@ export default function About() {
 
 
     return (
-        <div style = {{overflow: "none"}}>
+        <div>
             <Helmet>
                 <title>About Me Page | Nishanth Prajith</title>
             </Helmet>
-            <motion.div variants = {animation} initial = "initial" animate = "final">
-                <h1>About Page</h1>
+            <motion.div variants = {animation} initial = "initial" animate = "final" className = "main">
+
+                <div className = "landing">
+                    <h1>Hello.</h1>
+                    <div className = "loadingImage">
+
+                    </div>                
+                </div>
+
+                <div className = "twoColumns">
+                    <div className = "title">
+                        <p>About Me</p>
+                    </div>  
+                    <div className = "context">
+                        <p>My name is Nishanth Prajith. I am a Computer Science student from NYC aspiring
+                        to be a Data Scientist. I have experience in both front end and back end development.
+                        I enjoy learning new things and trying to experiment with different ideas.</p>
+                    </div>
+                </div>
+
+
+                <div className = "twoColumnsImages">
+                    <div className = "personalImageOne">
+                    </div>  
+                    <div className = "personalImageTwo">
+                    </div>
+                </div>
+                
             </motion.div>
         </div>
     )
