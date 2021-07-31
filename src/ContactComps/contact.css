@@ -20,9 +20,9 @@
 }
 
 
-.buttonFill {
-	width: 6vh;
-	height: 6vh;
+.buttonFillNew {
+	width: 50px;
+	height: 50px;
 	padding: 0%;
 	display: grid;
 	border-radius: 50px;
@@ -37,7 +37,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size:  1.1rem;
-	margin: 0% 14%;
+	margin: 0% 16%;
 	display: inline-block;
 }
 
@@ -45,4 +45,26 @@
 	writing-mode: vertical-rl;
 	font-size: 0.9rem;
 	transform: scale(-1, -1);;
+}
+
+@media screen and (max-width: 1367px) {
+	.message {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.message {
+		width: 80%;
+		font-size: 1.1rem;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.contact div h1 {
+		font-size: 2.5rem;
+		margin-bottom: 10%;
+	}
 }

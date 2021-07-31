@@ -20,7 +20,7 @@ export default function About() {
 
     const hoverMailAnimation = {
         "hover": {
-            width: "22vh"
+            width: "10.1rem"
         }
     }
 
@@ -41,7 +41,7 @@ export default function About() {
                         free to conact me to say hi or talk about an project. I will do my best to
                         reach out back to you.
                     </p>
-                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFill">
+                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillNew">
                         <a href = "mailto:nishanth.prajith@gmail.com">
                             <p className = "button">Say Hello &#8594;</p>
                         </a>
