@@ -1,0 +1,107 @@
+.headerLanding h1 {
+	font-size: 6rem;
+	font-weight: 500;
+}
+
+.headerLanding {
+	height: 95vh;
+	display: grid;
+	padding-left: 10%;
+	align-items: center;
+}
+
+.headerLanding p {
+	font-size: 1.4rem;
+	width: 60%;
+	margin: 3% 0%;
+	padding-left: 10%;
+}
+
+
+.emailRequest {
+	height: 50vh;
+	padding: 0% 10%;
+	background-color: #EAEAEB;
+	display: grid;
+	align-items: center;
+}
+
+.emailRequest h1 {
+	width: 50%;
+	font-size: 2.8rem;
+}
+
+.buttonFillNew {
+	width: 6vh;
+	height: 6vh;
+	margin-top: 5vh;
+	padding: 0%;
+	display: grid;
+	border-radius: 50px;
+	align-items: center;
+	background-color: #C1C1C2;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+
+.button {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:  1.1rem;
+	margin: 0% 14%;
+	display: inline-block;
+}
+
+.listofProjects {
+	padding: 0 6%;
+	width: 88%;
+	display: grid;
+	grid-template-columns: repeat(2, 48%);
+	column-gap: 4%;
+	margin-bottom: 10%;
+}
+
+.individualProject {
+	display: grid;
+	align-items: center;
+	z-index: 10;
+	position: relative;
+	grid-template-columns: 90% 10%;
+}
+
+hr {
+	margin: 4vh 0;
+	width: 90%;
+	border: 1px solid #EAEAEB;
+}
+.individualProject h1 {
+	font-size: 2.5rem;
+}
+
+.individualProject p {
+	color: #6F7071;
+}
+
+.individualProject div:nth-child(2) p {
+	font-size: 2rem;
+	color: #000000;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+
+.individualProject div:nth-child(2) div {
+	background-color: #EAEAEB;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+
+
+
+
+
+
+

@@ -1,6 +1,8 @@
 
 import './about.css'
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { Helmet } from 'react-helmet';
 
 export default function About() {
@@ -24,6 +26,129 @@ export default function About() {
         }
     }
 
+    const ImageAnimation = {
+        "initial": {
+            height: "0vh"
+        },
+        "visible": {
+            height: "80vh",
+            transition: {
+                ease: "easeInOut",
+                default: {duration: 2 },
+            },
+        }
+    }
+
+    const ImageFirstAnimation = {
+        "initial": {
+            width: "0vh"
+        },
+        "visible": {
+            width: "75%",
+            transition: {
+                ease: "easeInOut",
+                default: {delay: 1.5, duration: 2 },
+            },
+        }
+    }
+
+    const banner = {
+        "initial": {},
+        "animate": {
+            transition: {
+                delayChildren: 2,
+                staggerChildren: 0.1,
+            },
+        },
+    };
+
+    const letterAnimation = {
+        "initial": { opacity: 0},
+        "animate": {
+            opacity: 1,
+            transition: {
+                ease: [0.6, 0.01, -0.05, 0.95],
+                duration: 1,
+            },
+        },
+    };
+
+    const rightfade = {
+        "initial": {
+            x: 100,
+            opacity: 0
+        },
+        "visible": {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 1.5
+            }
+        }
+    }
+
+    const leftfade = {
+        "initial": {
+            x: -100,
+            opacity: 0
+        },
+        "visible": {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 1.5
+            }
+        }
+    }
+
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    const controlsTwo = useAnimation();
+    const [reftwo, inViewtwo] = useInView();
+
+    const controlsThree = useAnimation();
+    const [refThree, inViewThree] = useInView();
+
+    const controlsFour = useAnimation();
+    const [refFour, inViewFour] = useInView();
+
+    const controlsFive = useAnimation();
+    const [refFive, inViewFive] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+          controls.start("visible");
+        }
+    }, [controls, inView]);
+
+
+    useEffect(() => {
+        if (inViewtwo) {
+          controlsTwo.start("visible");
+        }
+    }, [controlsTwo, inViewtwo]);
+
+
+    useEffect(() => {
+        if (inViewThree) {
+          controlsThree.start("visible");
+        }
+    }, [controlsThree, inViewThree]);
+
+
+    useEffect(() => {
+        if (inViewFour) {
+          controlsFour.start("visible");
+        }
+    }, [controlsFour, inViewFour]);
+
+    useEffect(() => {
+        if (inViewFive) {
+          controlsFive.start("visible");
+        }
+    }, [controlsFive, inViewFive]);
+
 
 
     return (
@@ -31,13 +156,22 @@ export default function About() {
             <Helmet>
                 <title>About Me Page | Nishanth Prajith</title>
             </Helmet>
-            <motion.div variants = {animation} initial = "initial" animate = "final" className = "main">
+            <motion.div className = "main" variants = {animation} initial = "initial" animate = "final">
 
                 <div className = "landing">
-                    <h1>Hello.</h1>
-                    <div className = "loadingImage">
+                    <motion.div className = "title" variants = {banner}
+                    initial = "initial" animate = "animate"
+                    >
+                        <motion.span variants = {letterAnimation}>H</motion.span>
+                        <motion.span variants = {letterAnimation}>e</motion.span>
+                        <motion.span variants = {letterAnimation}>l</motion.span>
+                        <motion.span variants = {letterAnimation}>l</motion.span>
+                        <motion.span variants = {letterAnimation}>o</motion.span>
+                        <motion.span variants = {letterAnimation}>.</motion.span>
+                    </motion.div>
+                    <motion.div className = "loadingImage" ref = {reftwo} variants = {ImageFirstAnimation} animate = {controlsTwo} initial = "initial">
 
-                    </div>                
+                    </motion.div>                
                 </div>
 
                 <div className = "twoColumns">
@@ -53,10 +187,10 @@ export default function About() {
 
 
                 <div className = "twoColumnsImages">
-                    <div className = "personalImageOne">
-                    </div>  
-                    <div className = "personalImageTwo">
-                    </div>
+                    <motion.div className = "personalImageOne" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
+                    </motion.div> 
+                    <motion.div className = "personalImageTwo" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
+                    </motion.div>
                 </div>
 
                 <div className = "resumeInfo">
@@ -77,35 +211,29 @@ export default function About() {
                 </div>
 
                 <div class="banner">
-
-                    <div class="marquee">
+                    <motion.div class="marqueeText" variants = {rightfade} ref = {refThree} animate = {controlsThree} initial = "initial">
                         <div class="marquee__inner" aria-hidden="true">
                             <span>Frontend</span>
                             <span>Backend</span>
                             <span>UI/UX</span>
                         </div>
-                    </div>
+                    </motion.div>
 
-
-                    <div class="marquee">
+                    <motion.div class="marqueeText" variants = {leftfade} ref = {refFour} animate = {controlsFour} initial = "initial">
                         <div class="marquee__innerRight" aria-hidden="true">
-                            <span>React</span>
                             <span>Next.js</span>
                             <span>Flutter</span>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    
-
-                    <div class="marquee">
+                    <motion.div class="marqueeText" variants = {rightfade} ref = {refFive} animate = {controlsFive} initial = "initial">
                         <div class="marquee__inner" aria-hidden="true">
                             <span>Python</span>
                             <span>JAVA</span>
                             <span>C++</span>
                             <span>Dart</span>
                         </div>
-                    </div>
-
+                    </motion.div>
                 </div>
 
                 <div className = "resumeInfo">
@@ -134,6 +262,13 @@ export default function About() {
                         <div style = {{textAlign: "center"}}>
                             <p>2019</p>
                         </div>
+                    </div>
+                </div>
+
+                <div className = "quote">
+                    <div>
+                        <p>"The important thing is to not stop questioning. Curiosity has its own reason for existing."</p>
+                        <p>- Albert Einstein</p>
                     </div>
                 </div>
 
