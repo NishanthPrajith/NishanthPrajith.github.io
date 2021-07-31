@@ -35,6 +35,6 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: 0 2% 2% 0%;
+  padding: 0 2vh 5vh 0%;
   z-index: 10;
 }
