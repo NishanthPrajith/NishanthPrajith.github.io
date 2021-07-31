@@ -1,9 +1,10 @@
 
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { useContext } from "react";
+import { useContext} from "react";
 import './project.css'
 import { MouseContext } from "../context/mouse-context";
+
 
 export default function Project() {
 
@@ -51,7 +52,18 @@ export default function Project() {
         }
     }
 
-
+    const fadeIn = {
+        "initial": {
+            opacity: 0
+        },
+        "visible": {
+            opacity: 1,
+            transition: {
+                type: "ease-in-out",
+                duration: 2
+            }
+        }
+    }
 
     return (
         <div>
@@ -85,7 +97,7 @@ export default function Project() {
                         <hr />
 
                         <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" 
-                        onMouseEnter={() => cursorChangeHandler("projectOne")}
+                        onMouseEnter={() => cursorChangeHandler("projectTwo")}
                         onMouseLeave={() => cursorChangeHandler("")}>
                             <div>
                                 <h1>Music App UI</h1>
@@ -116,9 +128,8 @@ export default function Project() {
 
                         <hr />
 
-
                         <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" 
-                        onMouseEnter={() => cursorChangeHandler("projectOne")}
+                        onMouseEnter={() => cursorChangeHandler("projectTwo")}
                         onMouseLeave={() => cursorChangeHandler("")}>
                             <div>
                                 <h1>Music App UI</h1>
