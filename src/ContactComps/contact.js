@@ -18,7 +18,10 @@ export default function About() {
         },
     }
 
-    const hoverMailAnimation = {
+    const hoverTestAnimation = {
+        "initial": {
+            width: "50px"
+        },
         "hover": {
             width: "10.1rem"
         }
@@ -41,7 +44,7 @@ export default function About() {
                         free to conact me to say hi or talk about an project. I will do my best to
                         reach out back to you.
                     </p>
-                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillNew">
+                    <motion.div variants = {hoverTestAnimation} whileHover = "hover" initial = "initial" className = "buttonFill">
                         <a href = "mailto:nishanth.prajith@gmail.com">
                             <p className = "button">Say Hello &#8594;</p>
                         </a>

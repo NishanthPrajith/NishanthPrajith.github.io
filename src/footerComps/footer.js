@@ -11,10 +11,18 @@ export default function Footer() {
             <footer>
                 
                 <p>&copy; NISHANTH PRAJITH 2021 <span> | </span>   
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i> 
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-github"></i>
+                    <a href = "https://www.facebook.com/people/Nishanth-Prajith/100009547906410/" target = "_blank" rel="noreferrer noopener">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href = "https://www.instagram.com/nishanthprajith/" target = "_blank" rel="noreferrer noopener">
+                        <i class="fa fa-instagram"></i>
+                    </a> 
+                    <a href = "https://www.linkedin.com/in/nishanth-prajith" target = "_blank" rel="noreferrer noopener">
+                        <i class="fa fa-linkedin"></i>
+                    </a> 
+                    <a href = "https://github.com/NishanthPrajith" target = "_blank" rel="noreferrer noopener">
+                        <i class="fa fa-github"></i>
+                    </a>
                 </p>
 
             </footer>
