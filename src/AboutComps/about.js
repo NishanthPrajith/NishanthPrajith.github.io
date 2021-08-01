@@ -22,7 +22,7 @@ export default function About() {
 
     const hoverMailAnimation = {
         "hover": {
-            width: "24vh"
+            width: "14.1rem"
         }
     }
 
@@ -31,7 +31,7 @@ export default function About() {
             height: "0vh"
         },
         "visible": {
-            height: "80vh",
+            height: "100%",
             transition: {
                 ease: "easeInOut",
                 default: {duration: 2 },
@@ -44,7 +44,7 @@ export default function About() {
             width: "0vh"
         },
         "visible": {
-            width: "75%",
+            width: "85%",
             transition: {
                 ease: "easeInOut",
                 default: {delay: 1.5, duration: 2 },
@@ -203,7 +203,7 @@ export default function About() {
                             <h2> Thomas A. Edison C.T.E High School, Jamaica, NY </h2>
                             <h3> I maintained the schools website, and updated it with new events and annoucments on a weekly basis. </h3>
                         </div>
-                        <div style = {{textAlign: "center"}}>
+                        <div>
                             <p>2017</p>
                         </div>
                     </div>
@@ -246,7 +246,7 @@ export default function About() {
                             <h2> City College Of New York, New York City, NY </h2>
                             <h3> Currently, studying Computer science at the grove school of engineering. </h3>
                         </div>
-                        <div style = {{textAlign: "center"}}>
+                        <div>
                             <p>2019</p>
                         </div>
                     </div>
@@ -259,7 +259,7 @@ export default function About() {
                             <h2> Thomas A. Edison C.T.E High School, Jamaica, NY </h2>
                             <h3> I studied web developement and graphic design, specically HTML, CSS, Adobe Photoshop and Illustrator. </h3>
                         </div>
-                        <div style = {{textAlign: "center"}}>
+                        <div>
                             <p>2019</p>
                         </div>
                     </div>

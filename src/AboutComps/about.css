@@ -83,7 +83,6 @@
 	font-weight: 500;
 }
 
-
 .resumeData {
 	margin-top: 3%;
 	margin-bottom: 1%;
@@ -91,7 +90,7 @@
 	display: grid;
 	justify-content: center;
 	align-items: flex-end;
-	grid-template-columns: 25% 65% 10%
+	grid-template-columns: 25% 65% 10%;
 }
 
 .resumeData h1 {
@@ -105,6 +104,10 @@
 	font-weight: 200;
 }
 
+.resumeData p {
+	text-align: center;
+}
+
 .resumeData h2 {
 	font-style: italic;
 }
@@ -114,7 +117,6 @@
 	font-weight: 100;
 	margin-top: 1%;
 }
-
 
 
 .banner {
@@ -137,8 +139,8 @@
 
 
 .buttonFill {
-	width: 6vh;
-	height: 6vh;
+	width: 50px;
+	height: 50px;
 	display: grid;
 	border-radius: 50px;
 	align-items: center;
@@ -182,7 +184,7 @@
 
 
 .quote {
-	background-color: red;
+	background-color: #f3f3f3;
 	height: 60vh;
 	margin-top: 20vh;
 	display: grid;
@@ -206,4 +208,201 @@
 	margin-top: 3%;
 	margin-right: 10%;
 }
+
+
+@media screen and (max-width: 1367px) {
+	.twoColumnsImages {
+		margin-bottom: 10vh;
+	}
+	.personalImageTwo {
+		background-size: 120%;
+		margin-top: 5vh;
+	}
+
+	.banner {
+		height: 40vh;
+		margin: 15vh 0;
+	}
+
+	.marquee__inner span, .marquee__innerRight span {
+		font-size: 4.5rem;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.marquee__inner span, .marquee__innerRight span {
+		font-size: 4rem;
+		-webkit-text-stroke: 0px #ffffff;
+		color: #ffffff;
+	}
+}
+
+
+@media screen and (max-width: 824px) {
+	.landingImage {
+		height: 20vh;
+	}
+
+	.context {
+		margin-top: 10%;
+		font-size: 1.25rem;
+	}
+
+	.landing {
+		margin-top: 20vh;
+	}
+
+	.twoColumns {
+		grid-template-columns: 100%;
+	}
+
+	.title {
+		font-weight: 500;
+		font-size: 1.5rem;
+	}
+
+	.twoColumnsImages {
+		margin-top: 10vh;
+		height: 50vh;
+		margin-bottom: 10vh;
+	}
+
+	.banner {
+		height: 27vh;
+		margin: 10vh 0;
+	}
+
+	.marquee__inner span, .marquee__innerRight span {
+		font-size: 2.7rem;
+	}
+
+	.quote {
+		height: 35vh;
+	}
+	
+	.quote div {
+		width: 85%;
+	}
+	
+	.quote p:nth-child(1) {
+		font-size: 1.6rem;
+	}
+
+	.resume {
+		height: 30vh;
+	}
+
+	.resumeInfo {
+		padding: 0 8%;
+	}
+
+	.resumeData {
+		grid-template-columns: 100%;
+		margin-bottom: 10%;
+	}
+
+	.resumeTitle {
+		margin-bottom: 5%;
+	}
+
+	.resumeData p {
+		text-align: left;
+	}
+
+	.resumeData div {
+		margin: 1% 0;
+	}
+
+	.quote {
+		margin-top: 10vh;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.landing .title {
+		font-size: 4rem;
+		font-weight: 700;
+	}
+
+	.loadingImage {
+		margin-bottom: 5vh;
+		height: 60vh;
+	}
+
+	.twoColumns {
+		margin: 0 10%;
+	}
+
+	.context {
+		margin-top: 10%;
+		font-size: 1.1rem;
+	}
+
+	.title {
+		font-weight: 500;
+		font-size: 1.8rem;
+	}
+
+	.twoColumnsImages {
+		padding: 0 9%;
+		margin-top: 10vh;
+		display: grid;
+		grid-template-columns: 100%;
+		height: 100vh;
+		margin-bottom: 20vh;
+	}
+
+	.banner {
+		height: 25vh;
+	}
+
+	.marquee__inner span, .marquee__innerRight span {
+		font-size: 1.8rem;
+	}
+
+	.quote {
+		height: 35vh;
+	}
+	
+	.quote div {
+		width: 90%;
+	}
+	
+	.quote p:nth-child(1) {
+		font-size: 1.3rem;
+	}
+	
+	.quote p:nth-child(2) {
+		font-size: 1rem;
+	}
+
+	.resumeTitle {
+		font-size: 2.1rem;
+	}
+
+	.resumeData h1 {
+		font-size: 1.3rem;
+	}
+	
+	.resumeData h2, .resumeData p {
+		font-size: 1.1rem;
+		font-weight: 200;
+	}
+
+	.resumeData h3 {
+		font-size: 1.1rem;
+		font-weight: 100;
+		margin-top: 1%;
+	}
+
+	.resumeData div {
+		margin: 3% 0;
+	}
+
+	.resumeData {
+		margin-bottom: 14%;
+	}
+
+}
+
 
