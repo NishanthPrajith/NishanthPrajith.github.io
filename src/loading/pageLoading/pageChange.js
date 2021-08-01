@@ -42,8 +42,9 @@ function MoveFrom() {
         }
     }
 
+
     return (
-        <div>
+        <div className = "placeholder">
             <motion.div className = "background" variants = {CircleTwo} initial = "initial" animate = "animate">
             </motion.div>
             <motion.div className = "circle" variants = {circle} initial = "initial" animate = "animate">

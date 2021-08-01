@@ -20,6 +20,11 @@ export default function NavBar() {
         console.log("closed");
     }
 
+    function closeNavLink() {
+        setClicked(false);
+        window.scroll(0,0);
+    }
+
     const animation = {
         "initial" : {
             opacity: 0,
@@ -44,22 +49,22 @@ export default function NavBar() {
                     <div className={navBarClicked ? "sidenav" : "sidenavNone"}>
                         <div>
                             <p className = "text">Menu</p>
-                            <Link to = '/' onClick = {closeNav}>
+                            <Link to = '/' onClick = {closeNavLink}>
                                 <div className = "marque">
                                     <p className = "links">Home<br></br> Home</p>
                                 </div>
                             </Link>
-                            <Link to = '/about' onClick = {closeNav}>
+                            <Link to = '/about' onClick = {closeNavLink}>
                                 <div className = "marque">
                                     <p className = "links">About Me<br></br> About Me</p>
                                 </div>
                             </Link>
-                            <Link to = '/projects' onClick = {closeNav}>
+                            <Link to = '/projects' onClick = {closeNavLink}>
                                 <div className = "marque">
                                     <p className = "links">Projects<br></br> Projects</p>
                                 </div>
                             </Link>
-                            <Link to = '/contactme' onClick = {closeNav}>
+                            <Link to = '/contactme' onClick = {closeNavLink}>
                                 <div className = "marque">
                                     <p className = "links">Contact Me<br></br> Contact Me</p>
                                 </div>

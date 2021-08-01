@@ -99,13 +99,15 @@ function App() {
               <Home />
             </Route>
             <Route path = "/about">
+              <MoveFrom />
               <About />
             </Route>
             <Route path = "/projects">
+              <MoveFrom />
               <Project />
             </Route>
             <Route path = "/contactme">
-
+              <MoveFrom />
               <Contact />
             </Route>
           </Switch>

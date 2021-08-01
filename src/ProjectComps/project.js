@@ -40,10 +40,12 @@ export default function Project() {
 
     const hoverchild = {
         "initial": {
-            width: '0'
+            width: '0px',
+            height: '0px'
         },
         'animate': {
-            width: "70%",
+            width: "50px",
+            height: "50px",
             transition: {
                 type: "ease-in-out",
                 duration: 0.2
