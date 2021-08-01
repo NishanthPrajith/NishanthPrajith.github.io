@@ -64,6 +64,7 @@
 	background-image: url("https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
 	background-size: 100%;
 	margin-top: 10vh;
+	background-repeat: no-repeat;
 }
 
 .personalImageOne {
@@ -123,6 +124,7 @@
 	display: grid;
 	padding: 3% 0%;
 	margin: 25vh 0;
+	overflow: hidden;
 }
 
 .resume {

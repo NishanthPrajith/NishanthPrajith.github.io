@@ -25,7 +25,7 @@ export default function Project() {
 
     const hoverMailAnimation = {
         "hover": {
-            width: "26vh"
+            width: "14.1rem"
         }
     }
 
@@ -201,8 +201,8 @@ export default function Project() {
 
                 <div className = "emailRequest">
                     <div>
-                        <h1>Have a project idea? Contact me.</h1>
-                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillNew">
+                        <h1>Have a project idea? <br></br>Contact me.</h1>
+                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillOne">
                             <a href = "mailto:nishanth.prajith@gmail.com">
                                 <p className = "button">Send an Email &#8594;</p>
                             </a>

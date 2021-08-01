@@ -17,7 +17,6 @@
 	padding-left: 10%;
 }
 
-
 .emailRequest {
 	height: 50vh;
 	padding: 0% 10%;
@@ -31,9 +30,9 @@
 	font-size: 2.8rem;
 }
 
-.buttonFillNew {
-	width: 6vh;
-	height: 6vh;
+.buttonFillOne {
+	width: 50px;
+	height: 50px;
 	margin-top: 5vh;
 	padding: 0%;
 	display: grid;
@@ -73,8 +72,10 @@
 hr {
 	margin: 4vh 0;
 	width: 90%;
-	border: 1px solid #EAEAEB;
+	border: 0.5px solid #EAEAEB;
+	background-color: #EAEAEB;
 }
+
 .individualProject h1 {
 	font-size: 2.5rem;
 }
@@ -97,6 +98,171 @@ hr {
 	display: inline-block;
 	border-radius: 100%;
 }
+
+
+@media screen and (max-height: 1367px) {
+	.headerLanding {
+		height: 65vh;
+	}
+
+	hr {
+		margin: 3vh 0;
+	}
+
+	.emailRequest {
+		height: 35vh;
+	}
+
+	.emailRequest h1 { 
+		width: 70%;
+	}
+}
+
+
+@media screen and (max-width: 1025px) {
+	.headerLanding {
+		height: 90vh;
+	}
+
+	.headerLanding h1 {
+		font-size: 5.2rem;
+	}
+
+	hr {
+		margin: 3vh 0;
+	}
+
+	.emailRequest {
+		height: 55vh;
+		margin-bottom: 10vh;
+	}
+
+	.emailRequest h1 { 
+		width: 70%;
+	}
+
+	.headerLanding p {
+		font-size: 1.2rem;
+		width: 80%;
+	}
+
+	.emailRequest h1 {
+		width: 70%;
+		font-size: 2.5rem;
+	}
+
+	.individualProject h1 {
+		font-size: 2rem;
+	}
+
+	.individualProject div:nth-child(2) p {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 824px) {
+	.headerLanding {
+		height: 60vh;
+	}
+
+	.headerLanding h1 {
+		font-size: 4.5rem;
+	}
+
+	.headerLanding p {
+		font-size: 1.1rem;
+	}
+
+	hr {
+		margin: 3vh 0;
+	}
+
+	.listofProjects {
+		grid-template-columns: 100%;
+		column-gap: 0%;
+		padding: 0 6% 0% 12%;
+		width: 82%;
+	}
+
+	.emailRequest {
+		height: 40vh;
+		margin-bottom: 10vh;
+	}
+
+	.emailRequest h1 { 
+		width: 90%;
+		font-size: 2.3rem;
+	}
+
+	.headerLanding p {
+		font-size: 1.2rem;
+		width: 80%;
+	}
+
+	.individualProject h1 {
+		font-size: 2rem;
+	}
+
+	.individualProject div:nth-child(2) p {
+		font-size: 1.3rem;
+	}
+}
+
+
+
+@media screen and (max-width: 500px) {
+	.headerLanding {
+		height: 80vh;
+	}
+
+	.headerLanding h1 {
+		font-size: 2.5rem;
+	}
+
+	.headerLanding p {
+		padding-left: 0%;
+		padding-top: 7%;
+		font-size: 1rem;
+	}
+
+	hr {
+		margin: 3vh 0;
+	}
+
+	.listofProjects {
+		grid-template-columns: 100%;
+		column-gap: 0%;
+		padding: 0 3% 0% 10%;
+		width: 87%;
+	}
+
+	.emailRequest {
+		height: 35vh;
+		margin-bottom: 10vh;
+	}
+
+	.emailRequest h1 { 
+		width: 90%;
+		font-size: 1.6rem;
+	}
+
+	.headerLanding p {
+		font-size: 1.2rem;
+		width: 80%;
+	}
+
+	.individualProject h1 {
+		font-size: 1.7rem;
+		margin-bottom: 4%;
+	}
+
+	.individualProject div:nth-child(2) p {
+		font-size: 1rem;
+	}
+}
+
+
+
 
 
 
