@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/testreactdeploy/static/css/main.e514c51c.chunk.css",
-    "main.js": "/testreactdeploy/static/js/main.3967ff43.chunk.js",
-    "main.js.map": "/testreactdeploy/static/js/main.3967ff43.chunk.js.map",
+    "main.js": "/testreactdeploy/static/js/main.3ee9b3bd.chunk.js",
+    "main.js.map": "/testreactdeploy/static/js/main.3ee9b3bd.chunk.js.map",
     "runtime-main.js": "/testreactdeploy/static/js/runtime-main.27b5830b.js",
     "runtime-main.js.map": "/testreactdeploy/static/js/runtime-main.27b5830b.js.map",
     "static/js/2.2f059a96.chunk.js": "/testreactdeploy/static/js/2.2f059a96.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.27b5830b.js",
     "static/js/2.2f059a96.chunk.js",
     "static/css/main.e514c51c.chunk.css",
-    "static/js/main.3967ff43.chunk.js"
+    "static/js/main.3ee9b3bd.chunk.js"
   ]
 }
