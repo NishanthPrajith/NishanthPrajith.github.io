@@ -25,6 +25,7 @@ export default function NavBar() {
         window.scroll(0,0);
     }
 
+
     const animation = {
         "initial" : {
             opacity: 0,

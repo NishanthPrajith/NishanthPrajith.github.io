@@ -5,6 +5,8 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import { useHistory, useParams } from 'react-router-dom'
+
 import MainLoader from './loading/main/mainloader';
 import MoveFrom from './loading/pageLoading/pageChange';
 
@@ -14,6 +16,7 @@ import About from './AboutComps/about';
 import Project from './ProjectComps/project'
 import Contact from './ContactComps/contact'
 import Footer from './footerComps/footer'
+import ProjectId from './individualProject/projectId'
 
 import DotRing from "./RecycleComps/DotRing/DotRing";
 
@@ -102,8 +105,9 @@ function App() {
               <MoveFrom />
               <About />
             </Route>
+            <Route path = "/projects/:projectId" render={ProjectId}/>
             <Route path = "/projects">
-              <MoveFrom />
+              <MoveFrom /> 
               <Project />
             </Route>
             <Route path = "/contactme">
