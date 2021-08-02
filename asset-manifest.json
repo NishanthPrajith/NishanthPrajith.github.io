@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/testreactdeploy/static/css/main.63192527.chunk.css",
-    "main.js": "/testreactdeploy/static/js/main.691562b9.chunk.js",
-    "main.js.map": "/testreactdeploy/static/js/main.691562b9.chunk.js.map",
+    "main.css": "/testreactdeploy/static/css/main.01b0569b.chunk.css",
+    "main.js": "/testreactdeploy/static/js/main.f5a53ced.chunk.js",
+    "main.js.map": "/testreactdeploy/static/js/main.f5a53ced.chunk.js.map",
     "runtime-main.js": "/testreactdeploy/static/js/runtime-main.27b5830b.js",
     "runtime-main.js.map": "/testreactdeploy/static/js/runtime-main.27b5830b.js.map",
-    "static/js/2.2f059a96.chunk.js": "/testreactdeploy/static/js/2.2f059a96.chunk.js",
-    "static/js/2.2f059a96.chunk.js.map": "/testreactdeploy/static/js/2.2f059a96.chunk.js.map",
+    "static/js/2.258e57d4.chunk.js": "/testreactdeploy/static/js/2.258e57d4.chunk.js",
+    "static/js/2.258e57d4.chunk.js.map": "/testreactdeploy/static/js/2.258e57d4.chunk.js.map",
     "index.html": "/testreactdeploy/index.html",
-    "static/css/main.63192527.chunk.css.map": "/testreactdeploy/static/css/main.63192527.chunk.css.map",
-    "static/js/2.2f059a96.chunk.js.LICENSE.txt": "/testreactdeploy/static/js/2.2f059a96.chunk.js.LICENSE.txt"
+    "static/css/main.01b0569b.chunk.css.map": "/testreactdeploy/static/css/main.01b0569b.chunk.css.map",
+    "static/js/2.258e57d4.chunk.js.LICENSE.txt": "/testreactdeploy/static/js/2.258e57d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.27b5830b.js",
-    "static/js/2.2f059a96.chunk.js",
-    "static/css/main.63192527.chunk.css",
-    "static/js/main.691562b9.chunk.js"
+    "static/js/2.258e57d4.chunk.js",
+    "static/css/main.01b0569b.chunk.css",
+    "static/js/main.f5a53ced.chunk.js"
   ]
 }
