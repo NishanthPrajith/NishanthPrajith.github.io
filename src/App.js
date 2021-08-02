@@ -17,6 +17,7 @@ import Project from './ProjectComps/project'
 import Contact from './ContactComps/contact'
 import Footer from './footerComps/footer'
 import ProjectId from './individualProject/projectId'
+import ErrorPage from './404Error'
 
 import DotRing from "./RecycleComps/DotRing/DotRing";
 
@@ -101,18 +102,21 @@ function App() {
             <Route exact path = "/">
               <Home />
             </Route>
-            <Route path = "/about">
+            <Route exact path = "/about">
               <MoveFrom />
               <About />
             </Route>
-            <Route path = "/projects/:projectId" render={ProjectId}/>
+            <Route exact path = "/projects/:projectId" render={ProjectId}/>
             <Route path = "/projects">
               <MoveFrom /> 
               <Project />
             </Route>
-            <Route path = "/contactme">
+            <Route exact path = "/contactme">
               <MoveFrom />
               <Contact />
+            </Route>
+            <Route>
+              <ErrorPage />
             </Route>
           </Switch>
         </AnimatePresence>

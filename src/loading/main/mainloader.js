@@ -36,7 +36,7 @@ export default function MainLoader() {
     }
 
     return (
-        <div>
+        <div className = "mainPlaceholder">
             <motion.div className = "mainLoaderOne" variants = {Topvariants} initial = "initial" animate = "final" exit = "done">
                 <motion.p variants = {pConstraint} initial = "initial" animate = "final">Creativity and Curiosity</motion.p>
             </motion.div>

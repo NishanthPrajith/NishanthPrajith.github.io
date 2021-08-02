@@ -5,6 +5,7 @@ nav {
     margin-top: 1vh;
     grid-template-columns: 50% 50%;
     align-items: center;
+    z-index: 3;
 }
 
 .sidenavNone {
