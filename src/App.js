@@ -40,11 +40,14 @@ function App() {
 
   // Configs
   const data = {
-    ease: 0.1,
+    ease: 0.2,
     current: 0,
     previous: 0,
     rounded: 0
   };
+
+  var current = "";
+
 
 
   // Run scrollrender once page is loaded.
@@ -63,11 +66,6 @@ function App() {
       scrollContainer.current.getBoundingClientRect().height
     }px`;
   };
-
-  function test() {
-    console.log("done");
-  }
-
   // Scrolling
   const skewScrolling = () => {
     //Set Current to the scroll position amount
@@ -89,7 +87,12 @@ function App() {
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());
 
-    setBodyHeight();
+    if (location.pathname != current) {
+      setBodyHeight();
+      console.log("checked");
+      current = location.pathname;
+    }
+    
   };
 
   return (
