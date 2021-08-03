@@ -8,7 +8,7 @@ export default function ErrorPage() {
             width: "50px"
         },
         "hover": {
-            width: "9.1rem"
+            width: "8.1rem"
         }
     }
 
