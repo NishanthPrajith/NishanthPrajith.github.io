@@ -5,7 +5,6 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import { useHistory, useParams } from 'react-router-dom'
 
 import MainLoader from './loading/main/mainloader';
 import MoveFrom from './loading/pageLoading/pageChange';
@@ -22,7 +21,6 @@ import ErrorPage from './404Error'
 import DotRing from "./RecycleComps/DotRing/DotRing";
 
 import { AnimatePresence } from 'framer-motion';
-import { version } from 'react-dom';
 
 import React, { useEffect, useRef } from "react";
 
@@ -40,7 +38,7 @@ function App() {
 
   // Configs
   const data = {
-    ease: 0.2,
+    ease: 0.15,
     current: 0,
     previous: 0,
     rounded: 0
@@ -87,7 +85,7 @@ function App() {
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());
 
-    if (location.pathname != current) {
+    if (location.pathname !== current) {
       setBodyHeight();
       console.log("checked");
       current = location.pathname;
@@ -96,7 +94,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div ref = {app} className="App">
       <DotRing />
       <NavBar></NavBar>
       <div className = "scroll" ref = {scrollContainer}>

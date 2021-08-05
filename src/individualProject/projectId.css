@@ -1,6 +1,99 @@
 .projectIdPage {
-	background-color: orange;
 	margin: 0;
 	padding: 0;
 	padding: 0;
 }
+
+.titleContainer {
+	padding: 0 10%;
+	width: 80%;
+	align-items: center;
+	height: 65vh;
+	display: grid;
+}
+
+.titleContainer h1 {
+	font-size: 6.5rem;
+}
+
+.titleContainer p {
+	color: #6F7071;
+	font-size: 1.1rem;
+}
+
+.portfolioImage {
+	background-color: lightgreen;
+	height: 85vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: top center;
+}
+
+.TwoColumns {
+	display: grid;
+	margin: 0 17%;
+	grid-template-columns: 30% 70%;
+	padding-top: 10vh;
+	padding-bottom: 20vh;
+}
+
+.projectDesc {
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.projectDesc a {	
+	margin-top: 6vh;
+	font-size: 1.15rem;
+	text-decoration: underline;
+	font-weight: 500;
+	text-underline-offset: 10px;
+}
+
+.projectlink {
+	padding-top: 6vh;
+}
+
+.videoTitle {
+	padding: 0 15%;
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 3vh;
+}
+
+.videoContainer {
+	margin: 0 8%;
+	width: 84%;
+	background-color: lightblue;
+	height: 80vh;
+}
+
+.nextProject {
+	width: 80%;
+	padding: 0 10%;
+	height: 45vh;
+	display: grid;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 1.9rem;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
