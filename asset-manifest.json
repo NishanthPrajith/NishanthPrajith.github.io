@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/testreactdeploy/static/css/main.28f247bc.chunk.css",
-    "main.js": "/testreactdeploy/static/js/main.8a001d11.chunk.js",
-    "main.js.map": "/testreactdeploy/static/js/main.8a001d11.chunk.js.map",
+    "main.css": "/testreactdeploy/static/css/main.74a6d186.chunk.css",
+    "main.js": "/testreactdeploy/static/js/main.ae980244.chunk.js",
+    "main.js.map": "/testreactdeploy/static/js/main.ae980244.chunk.js.map",
     "runtime-main.js": "/testreactdeploy/static/js/runtime-main.27b5830b.js",
     "runtime-main.js.map": "/testreactdeploy/static/js/runtime-main.27b5830b.js.map",
-    "static/js/2.656c4800.chunk.js": "/testreactdeploy/static/js/2.656c4800.chunk.js",
-    "static/js/2.656c4800.chunk.js.map": "/testreactdeploy/static/js/2.656c4800.chunk.js.map",
+    "static/js/2.d9a4cc02.chunk.js": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js",
+    "static/js/2.d9a4cc02.chunk.js.map": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js.map",
     "index.html": "/testreactdeploy/index.html",
-    "static/css/main.28f247bc.chunk.css.map": "/testreactdeploy/static/css/main.28f247bc.chunk.css.map",
-    "static/js/2.656c4800.chunk.js.LICENSE.txt": "/testreactdeploy/static/js/2.656c4800.chunk.js.LICENSE.txt",
-    "static/media/one.a3b40bab.png": "/testreactdeploy/static/media/one.a3b40bab.png"
+    "static/css/main.74a6d186.chunk.css.map": "/testreactdeploy/static/css/main.74a6d186.chunk.css.map",
+    "static/js/2.d9a4cc02.chunk.js.LICENSE.txt": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js.LICENSE.txt",
+    "static/media/eight.c9c354a0.png": "/testreactdeploy/static/media/eight.c9c354a0.png",
+    "static/media/four.02cbe952.png": "/testreactdeploy/static/media/four.02cbe952.png",
+    "static/media/nine.c6cda5fb.png": "/testreactdeploy/static/media/nine.c6cda5fb.png",
+    "static/media/one.a3b40bab.png": "/testreactdeploy/static/media/one.a3b40bab.png",
+    "static/media/seven.32eb7d60.png": "/testreactdeploy/static/media/seven.32eb7d60.png",
+    "static/media/six.befb6088.png": "/testreactdeploy/static/media/six.befb6088.png",
+    "static/media/ten.265f6a5e.png": "/testreactdeploy/static/media/ten.265f6a5e.png",
+    "static/media/three.b5beee6f.png": "/testreactdeploy/static/media/three.b5beee6f.png",
+    "static/media/two.40d81a47.png": "/testreactdeploy/static/media/two.40d81a47.png"
   },
   "entrypoints": [
     "static/js/runtime-main.27b5830b.js",
-    "static/js/2.656c4800.chunk.js",
-    "static/css/main.28f247bc.chunk.css",
-    "static/js/main.8a001d11.chunk.js"
+    "static/js/2.d9a4cc02.chunk.js",
+    "static/css/main.74a6d186.chunk.css",
+    "static/js/main.ae980244.chunk.js"
   ]
 }
