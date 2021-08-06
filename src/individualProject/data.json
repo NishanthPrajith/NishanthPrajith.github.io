@@ -6,8 +6,7 @@
  	"projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/musicAppUI",
     "imageColor" : "#142024",
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Food App UI",
@@ -32,53 +31,47 @@
  	"projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/EventsAppUI",
     "imageColor" : "#E4D7C9",
-    "size" : "70%",
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Password Reveal UI",
  	"tags" : "UI - Flutter - Instagram - Animation",
  	"projectLink" : true,
-    "link" : "",
+   "desc" : "A flutter app featuring a very unique interaction. I saw this on Instagram where someone created a similar interaction using Swift but I decided to create it in Flutter. The interaction is a flashlight which when clicked reveals the password the user entered. But, it also makes the flashlight icon literally flash light. Credit to the original creator, sorry I do not have your Instagram handle.",
+    "link" : "https://github.com/NishanthPrajith/passwordRevealer",
     "imageColor" : "#142024",
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Marathon Finder UI",
  	"tags" : "UI - Flutter - Dribble - Web app",
  	"projectLink" : false,
+    "desc" : "A flutter web app that recreated a UI design on dribble. This was my first time attempting to make a flutter web app. I wanted to make it responsive but found it too hard to do that since I did not have much experience in that area. ",
     "imageColor" : "#5BA079",
-    "size" : "68%",
     "videoCondition" : false
  },
  {
  	"title" : "Nature App UI",
-    "size" : "75%",
     "imageColor" : "#0B2944",
  	"tags" : "UI - Flutter - Dribble - Transition - Animation",
+   "desc" : "A flutter web app that recreated a UI design on dribble. This was a very interesting project which used the change notifier package along with the page view flutter widget to create a transition that appeared when the page was scrolled down. I learned a lot of about flutter packagae and change notifier to create scroll animations such as this one.",
  	"projectLink" : false,
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Fluid Card UI",
  	"tags" : "UI - Flutter - Dribble - Transition - Animation",
     "desc" : "The is a simple flutter UI design that was inspired by a design from dribble. Althought, this interaction is not perfect it was hard coded to create the effect instead of using something like the 'slimy card' package.",
  	"imageColor" : "#463A67",
-    "size" : "75%",
     "projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/fluidcard",
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Image Uploader Program",
  	"tags" : "Python - Github",
     "desc" : "Takes an image and uploads it to the website along with the necessary code. This program was written by me to make it easier to upload images to my portfolio website. It added all the necessary HTML code and pushed it all directly to GitHub, without me doing any of the hard manual labor.",
  	"projectLink" : true,
-    "size" : "75.5%",
     "imageColor" : "#131C29",
     "link" : "https://github.com/NishanthPrajith/Image_Uploader",
     "videoCondition" : false
@@ -87,12 +80,10 @@
  	"title" : "Convex Hull Visualization",
  	"tags" : "Convex Hull - HTML - CSS - JS",
     "desc" : "A simple visualization I made to showcase different convex hull algorithms such as graham scan, quick hull and divide & conquer. Just to make sure the controls is as simple as possible, all you as the user needs to do is click on the algorithm from the list at the top and let the javascript do the rest of the work. Once clicked the algorithm will begin executing. And only once the current execution is finished you the user will be allowed to choosen a different algorithm.",
- 	"size" : "75%",
     "imageColor" : "#EDEDEE",
     "projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/Convex_Hull_Visualization",
-    "videoCondition" : true,
-    "videoLink" : ""
+    "videoCondition" : true
  },
  {
  	"title" : "Recycle App UI",

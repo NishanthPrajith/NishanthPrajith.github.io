@@ -68,6 +68,11 @@ export default function Project() {
         }
     }
 
+    function changeCursor() {
+        cursorChangeHandler("");
+        window.scroll(0, 0);
+    }
+
     return (
         <div>
             <Helmet>
@@ -83,8 +88,8 @@ export default function Project() {
 
                 <div className = "listofProjects">
                     <div>
-                        <Link to = "/projects/1">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject">
+                        <Link to = "/projects/1" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject">
                                 <div>
                                     <h1>Music App UI</h1>
                                     <p>UI - Flutter</p>
@@ -99,8 +104,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/3">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/3" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Google Maps App UI</h1>
                                     <p>UI - Flutter</p>
@@ -115,8 +120,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/5">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/5" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Password Reveal UI</h1>
                                     <p>UI - Flutter - Instagram - Animation</p>
@@ -132,7 +137,7 @@ export default function Project() {
                         <hr />
 
                         <Link to = "/projects/7">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject">
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject">
                                 <div>
                                     <h1>Nature App UI</h1>
                                     <p>UI - Flutter - Dribble - Transition - Animation</p>
@@ -147,8 +152,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/9">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject">
+                        <Link to = "/projects/9" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject">
                                 <div>
                                     <h1>Image Uploader Program</h1>
                                     <p>Python - Github</p>
@@ -163,8 +168,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/11">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/11" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Recycle App UI</h1>
                                     <p>UI - Flutter</p>
@@ -182,8 +187,8 @@ export default function Project() {
                     </div>
 
                     <div>
-                        <Link to = "/projects/2">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/2" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Food App UI</h1>
                                     <p>UI - Flutter - Dribble</p>
@@ -198,8 +203,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/4">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/4" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Events App UI</h1>
                                     <p>UI - Flutter - Animation</p>
@@ -214,8 +219,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/6">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/6" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Marathon Finder UI</h1>
                                     <p>UI - Flutter - Dribble - Web app</p>
@@ -230,8 +235,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/8">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/8" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Fluid Card UI</h1>
                                     <p>UI - Flutter - Dribble - Transition - Animation</p>
@@ -246,8 +251,8 @@ export default function Project() {
 
                         <hr />
 
-                        <Link to = "/projects/10">
-                            <motion.div variants = {hoverProjectAnimation} initial = "initial" whileHover = "animate" className = "individualProject" >
+                        <Link to = "/projects/10" onClick = { changeCursor }>
+                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject" >
                                 <div>
                                     <h1>Convex Hull Visualization</h1>
                                     <p>Convex Hull - HTML - CSS - JS</p>

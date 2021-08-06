@@ -26,8 +26,8 @@
 	height: 85vh;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: 30%;
-	background-position: top center;
+	background-size: contain;
+	background-position: center;
 }
 
 .TwoColumns {
@@ -72,6 +72,9 @@
 	width: 84%;
 	background-color: lightblue;
 	height: 80vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
 .nextProject {

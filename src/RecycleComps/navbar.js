@@ -22,6 +22,7 @@ export default function NavBar() {
 
     function closeNavLink() {
         setClicked(false);
+        cursorChangeHandler("");
         window.scroll(0,0);
     }
 
