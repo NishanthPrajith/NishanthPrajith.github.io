@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import './home.css';
 import Helmet from "react-helmet";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -15,6 +16,16 @@ export default function Home() {
                 default: { delay: 0.5, duration: 1 },
             },
         },
+    }
+
+    const hoverMailAnimation = {
+        "hover": {
+            width: "14.1rem"
+        }
+    }
+
+    function runFunction() {
+        window.scroll(0, 0);
     }
 
     const slideOne = {
@@ -45,6 +56,22 @@ export default function Home() {
             },
             transitionEnd: {
                 marginRight: "16vw",
+            }
+        },
+    }
+
+    const expand = {
+         "initial" : {
+            width: "0%",
+        },
+        "final" : {
+            width: "80%",
+            transition: {
+                ease: "easeInOut",
+                default: { delay: 0.5, duration: 1 },
+            },
+            transitionEnd: {
+                width: "80%",
             }
         },
     }
@@ -84,11 +111,41 @@ export default function Home() {
                     <motion.div variants = {slideTwo} initial = "initial" animate = "final" className = "imageThree"></motion.div>
                     <motion.div variants = {slideThree} initial = "initial" animate = "final" className = "imageFour"></motion.div>
 
-                    <div className = "verticalBar">
-                    </div>
+                    <motion.div variants = {expand} initial = "initial" animate = "final" className = "verticalBar">
+                    </motion.div>
 
                     <p className = "headerTag">Personal Portfolio 2021</p>
                     
+                </div>
+
+                <div className = "featuredProjects">
+                    <h1>selected</h1>
+                    <h1>projects</h1>
+
+                    <div>
+
+                    </div>
+
+
+                    <div className = "buttonLinkContainer">
+                        <Link to = '/projects' onClick = {runFunction}>
+                            <button>
+                                View all Projects
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+                
+
+                <div className = "emailRequest">
+                    <div>
+                        <h1>Have a project idea? <br></br>Contact me.</h1>
+                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillOne">
+                            <a href = "mailto:nishanth.prajith@gmail.com">
+                                <p className = "button">Send an Email &#8594;</p>
+                            </a>
+                        </motion.div>
+                    </div>
                 </div>
             </motion.div>
         </div>

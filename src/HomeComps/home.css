@@ -84,3 +84,81 @@
 	background-color: lightcoral;
 }
 
+.featuredProjects {
+	width: 80%;
+	margin: 0 10%;
+	height: 80vh;
+	margin-top: 10vh;
+}
+
+.featuredProjects h1 {
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+}
+
+.featuredProjects h1:nth-child(2) {
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+  	color: transparent;
+  	font-size: 3rem;
+}
+
+
+.buttonLinkContainer {
+	width: 100%;
+	height: 12vh;
+}
+
+button {
+	background-color: #ffffff;
+	outline: none;
+	border: 1px solid gray;
+	padding: 1.5% 2.5%;
+	font-size: 1.15rem;
+	border-radius: 40px;
+	transition: .2s transform ease-in-out;
+	font-weight: 500;
+	overflow: hidden;
+}
+
+button::after {
+    background-color: #000000;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(0, 0);
+}
+
+button:hover {
+    border: 1px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.buttonLinkContainer a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
