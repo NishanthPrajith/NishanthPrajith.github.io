@@ -102,7 +102,6 @@
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
   	color: transparent;
-  	font-size: 3rem;
 }
 
 
@@ -163,8 +162,14 @@ button:hover {
 	button {
 		padding: 2.5% 5%;
 	}
+
+	.intro {
+		padding: 0% 1% 0% 5%;
+	}
+
+
 	.intro p {
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	.intro h1 {
 		font-size: 4.8rem;
@@ -204,6 +209,10 @@ button:hover {
 		position: absolute;
 		top: 25%;
 		right: 2%;
+	}
+
+	.featuredProjects h1 {
+		font-size: 2rem;
 	}
 
 	
