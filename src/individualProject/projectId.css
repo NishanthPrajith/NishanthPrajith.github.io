@@ -89,6 +89,48 @@
 }
 
 
+@media screen and (max-width: 824px) {
+	.TwoColumns {
+		grid-template-columns: 100%;
+	}
+	.title {
+		padding-bottom: 13%;
+	}
+	.projectlink {
+		padding-top: 3vh;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.TwoColumns {
+		margin: 0 12%;
+		padding-bottom: 15vh;
+	}
+	.projectDesc {
+		font-size: 1.2rem;
+	}
+	.nextProject {
+		height: 30vh;
+		font-size: 1.4rem;
+	}
+
+	.titleContainer h1 {
+		font-size: 4.5rem;
+	}
+
+	.titleContainer p {
+		font-size: 1rem;
+	}
+
+	.titleContainer {
+		height: 50vh;
+	}
+
+	.portfolioImage {
+		height: 50vh;
+	}
+}
+
 
 
 
