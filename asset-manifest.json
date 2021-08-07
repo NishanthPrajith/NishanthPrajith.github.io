@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testreactdeploy/static/css/main.1f692573.chunk.css",
+    "main.css": "/testreactdeploy/static/css/main.df0c1f75.chunk.css",
     "main.js": "/testreactdeploy/static/js/main.52effa48.chunk.js",
     "main.js.map": "/testreactdeploy/static/js/main.52effa48.chunk.js.map",
     "runtime-main.js": "/testreactdeploy/static/js/runtime-main.27b5830b.js",
@@ -8,7 +8,7 @@
     "static/js/2.d9a4cc02.chunk.js": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js",
     "static/js/2.d9a4cc02.chunk.js.map": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js.map",
     "index.html": "/testreactdeploy/index.html",
-    "static/css/main.1f692573.chunk.css.map": "/testreactdeploy/static/css/main.1f692573.chunk.css.map",
+    "static/css/main.df0c1f75.chunk.css.map": "/testreactdeploy/static/css/main.df0c1f75.chunk.css.map",
     "static/js/2.d9a4cc02.chunk.js.LICENSE.txt": "/testreactdeploy/static/js/2.d9a4cc02.chunk.js.LICENSE.txt",
     "static/media/eight.8c43bcb1.gif": "/testreactdeploy/static/media/eight.8c43bcb1.gif",
     "static/media/eight.c9c354a0.png": "/testreactdeploy/static/media/eight.c9c354a0.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.27b5830b.js",
     "static/js/2.d9a4cc02.chunk.js",
-    "static/css/main.1f692573.chunk.css",
+    "static/css/main.df0c1f75.chunk.css",
     "static/js/main.52effa48.chunk.js"
   ]
 }
