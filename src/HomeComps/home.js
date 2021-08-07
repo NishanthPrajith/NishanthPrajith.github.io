@@ -30,33 +30,27 @@ export default function Home() {
 
     const slideOne = {
         "initial" : {
-            marginRight: "28vw",
+            x: "-6vw",
         },
         "final" : {
-            marginRight: "22vw",
+            x: 0,
             transition: {
                 ease: "easeInOut",
                 default: { delay: 1, duration: 1 },
             },
-            transitionEnd: {
-                marginRight: "22vw",
-            }
         },
     }
 
     const slideTwo = {
         "initial" : {
-            marginRight: "28vw",
+            x: "-12vw"
         },
         "final" : {
-            marginRight: "16vw",
+            x: 0,
             transition: {
                 ease: "easeInOut",
                 default: { delay: 1.5, duration: 1 },
             },
-            transitionEnd: {
-                marginRight: "16vw",
-            }
         },
     }
 
@@ -78,17 +72,14 @@ export default function Home() {
 
     const slideThree = {
         "initial" : {
-            marginRight: "28vw",
+            x: "-18vw",
         },
         "final" : {
-            marginRight: "10vw",
+            x: 0,
             transition: {
                 ease: "easeInOut",
                 default: { delay: 2, duration: 1 },
             },
-            transitionEnd: {
-                marginRight: "10vw",
-            }
         },
     }
 

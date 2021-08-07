@@ -159,6 +159,56 @@ button:hover {
 }
 
 
+@media screen and (max-width: 500px) {
+	button {
+		padding: 2.5% 5%;
+	}
+	.intro p {
+		font-size: 1rem;
+	}
+	.intro h1 {
+		font-size: 4.8rem;
+	}
+	.landingPage {
+		align-items: flex-start;
+	}
+
+	.imageOne {
+		width: 78%;
+		height: 55vh;	
+	}
+
+	.imageTwo {
+		width: 78%;
+		height: 50vh;
+	}
+
+	.imageThree {
+		width: 78%;
+		height: 52vh;
+	}
+
+	.imageFour {
+		width: 78%;
+		height: 54vh;
+	}
+
+	.verticalBar {
+		bottom: 10vh;
+	}
+
+	.headerTag {
+		writing-mode: vertical-rl;
+		font-size: 0.95rem;
+		transform: scale(1, 1);
+		position: absolute;
+		top: 25%;
+		right: 2%;
+	}
+
+	
+}
+
 
 
 
