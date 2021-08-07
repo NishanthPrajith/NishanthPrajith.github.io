@@ -11,6 +11,7 @@ import one from '../images/one.png'
 import two from '../images/two.png'
 import three from '../images/three.png'
 import four from '../images/four.png'
+import five from '../images/five.png'
 import six from '../images/six.png'
 import seven from '../images/seven.png'
 import eight from '../images/eight.png'
@@ -65,7 +66,7 @@ export default function ProjectId ({match}) {
         }
     }
 
-    var imageLinkArray = [one, two, three, four, "", six, seven, eight, nine, ten]
+    var imageLinkArray = [one, two, three, four, five, six, seven, eight, nine, ten]
     var videoLinkArray = ["", "", "", fourVideo, fiveVideo, "", sevenVideo, eightVideo, "", tenVideo]
     
     function imageLink() {

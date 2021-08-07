@@ -6,7 +6,7 @@
  	"projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/musicAppUI",
     "imageColor" : "#142024",
-    "videoCondition" : true
+    "videoCondition" : false
  },
  {
  	"title" : "Food App UI",
