@@ -24,7 +24,7 @@
 	margin-bottom: 10vh;
 	width: 75%;
 	height: 80vh;
-	background: url("https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+	background: url("../images/four.JPG");
 	padding: 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -61,14 +61,14 @@
 }
 
 .personalImageTwo {
-	background-image: url("https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+	background-image: url("../images/second.JPG");
 	background-size: 100%;
 	margin-top: 10vh;
 	background-repeat: no-repeat;
 }
 
 .personalImageOne {
-	background-image: url("https://images.unsplash.com/photo-1549212926-920647491c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+	background-image: url("../images/three.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }

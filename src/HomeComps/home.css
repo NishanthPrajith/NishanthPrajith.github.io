@@ -9,7 +9,7 @@
 .verticalBar {
 	height: 16vh;
 	width: 75%;
-	background-color: #6C94D4;
+	background-color: #B2C3E6;
 	float: right;
 	position: absolute;
 	bottom: 15vh;
@@ -31,6 +31,10 @@
 	font-size: 6.4rem;
 }
 
+.intro h1 span {
+	color: #ffffff;
+}
+
 .headerTag {
 	writing-mode: vertical-rl;
 	font-size: 0.95rem;
@@ -49,6 +53,10 @@
 	z-index: 7;
 	margin-right: 28vw;
 	background-color: orange;
+	background-image: url('../images/six.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .imageTwo {
@@ -60,6 +68,10 @@
 	z-index: 6;
 	margin-right: 22vw;
 	background-color: lightgoldenrodyellow;
+	background-image: url('../images/one.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .imageThree {
@@ -71,6 +83,10 @@
 	z-index: 5;
 	margin-right: 16vw;
 	background-color: lightgreen;
+	background-image: url('../images/five.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .imageFour {
@@ -82,6 +98,10 @@
 	z-index: 4;
 	margin-right: 10vw;
 	background-color: lightcoral;
+	background-image: url('../images/seven.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .featuredProjects {
@@ -107,12 +127,13 @@
 
 .buttonLinkContainer {
 	width: 100%;
-	height: 12vh;
+	display: flex;
+	justify-content: center;
+
 }
 
-button {
-	background-color: #ffffff;
-	outline: none;
+.buttonLinkContainer a {
+	color: #000000;
 	border: 1px solid gray;
 	padding: 1.5% 2.5%;
 	font-size: 1.15rem;
@@ -122,41 +143,11 @@ button {
 	overflow: hidden;
 }
 
-button::after {
-    background-color: #000000;
-    border-radius: 3rem;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: .2s transform ease-out;
-    will-change: transform;
-    z-index: -1;
+.buttonLinkContainer a:hover {
+	background-color: #000000;
+	color: #ffffff;
+	transform: scale(1.06);
 }
-
-button:hover::after {
-    transform: translate(0, 0);
-}
-
-button:hover {
-    border: 1px solid transparent;
-    color: white;
-    transform: scale(1.05);
-    will-change: transform;
-}
-
-.buttonLinkContainer a {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 
 @media screen and (max-width: 500px) {
 	button {
@@ -165,6 +156,10 @@ button:hover {
 
 	.intro {
 		padding: 0% 1% 0% 5%;
+	}
+
+	.intro h1 span {
+		color: #000000;
 	}
 
 	.intro p {

@@ -94,7 +94,7 @@ export default function Home() {
                     <div className = "intro">
                         <p>University Student & <br/>
                             aspiring Data Scientist </p>
-                        <h1>Nishanth Prajith</h1>
+                        <h1>Nishanth <span>Prajith</span></h1>
                     </div>
 
                     <div className = "imageOne"></div>
@@ -120,9 +120,7 @@ export default function Home() {
 
                     <div className = "buttonLinkContainer">
                         <Link to = '/projects' onClick = {runFunction}>
-                            <button>
-                                View all Projects
-                            </button>
+                            View all Projects
                         </Link>
                     </div>
                 </div>
