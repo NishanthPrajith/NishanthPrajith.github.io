@@ -28,61 +28,6 @@ export default function Home() {
         window.scroll(0, 0);
     }
 
-    const slideOne = {
-        "initial" : {
-            x: "-6vw",
-        },
-        "final" : {
-            x: 0,
-            transition: {
-                ease: "easeInOut",
-                default: { delay: 1, duration: 1 },
-            },
-        },
-    }
-
-    const slideTwo = {
-        "initial" : {
-            x: "-12vw"
-        },
-        "final" : {
-            x: 0,
-            transition: {
-                ease: "easeInOut",
-                default: { delay: 1.5, duration: 1 },
-            },
-        },
-    }
-
-    const expand = {
-         "initial" : {
-            width: "0%",
-        },
-        "final" : {
-            width: "80%",
-            transition: {
-                ease: "easeInOut",
-                default: { delay: 0.5, duration: 1 },
-            },
-            transitionEnd: {
-                width: "80%",
-            }
-        },
-    }
-
-    const slideThree = {
-        "initial" : {
-            x: "-18vw",
-        },
-        "final" : {
-            x: 0,
-            transition: {
-                ease: "easeInOut",
-                default: { delay: 2, duration: 1 },
-            },
-        },
-    }
-
 
     return (
         <div> 
@@ -96,14 +41,6 @@ export default function Home() {
                             aspiring Data Scientist </p>
                         <h1>Nishanth <span>Prajith</span></h1>
                     </div>
-
-                    <div className = "imageOne"></div>
-                    <motion.div variants = {slideOne} initial = "initial" animate = "final" className = "imageTwo"></motion.div>
-                    <motion.div variants = {slideTwo} initial = "initial" animate = "final" className = "imageThree"></motion.div>
-                    <motion.div variants = {slideThree} initial = "initial" animate = "final" className = "imageFour"></motion.div>
-
-                    <motion.div variants = {expand} initial = "initial" animate = "final" className = "verticalBar">
-                    </motion.div>
 
                     <p className = "headerTag">Personal Portfolio 2021</p>
                     

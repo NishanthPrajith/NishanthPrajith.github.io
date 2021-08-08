@@ -4,6 +4,10 @@
 	position: relative;
 	display: grid;
 	align-items: flex-end;
+	background-image: url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
 }
 
 .verticalBar {
@@ -31,10 +35,6 @@
 	font-size: 6.4rem;
 }
 
-.intro h1 span {
-	color: #ffffff;
-}
-
 .headerTag {
 	writing-mode: vertical-rl;
 	font-size: 0.95rem;
@@ -42,66 +42,6 @@
 	position: absolute;
 	top: 4%;
 	right: 2%;
-}
-
-.imageOne {
-	width: 38%;
-	height: 85vh;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 7;
-	margin-right: 28vw;
-	background-color: orange;
-	background-image: url('../images/six.JPG');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.imageTwo {
-	width: 38%;
-	height: 63vh;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 6;
-	margin-right: 22vw;
-	background-color: lightgoldenrodyellow;
-	background-image: url('../images/one.JPG');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.imageThree {
-	width: 38%;
-	height: 75vh;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 5;
-	margin-right: 16vw;
-	background-color: lightgreen;
-	background-image: url('../images/five.JPG');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.imageFour {
-	width: 38%;
-	height: 70vh;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 4;
-	margin-right: 10vw;
-	background-color: lightcoral;
-	background-image: url('../images/seven.JPG');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 
 .featuredProjects {
@@ -158,9 +98,6 @@
 		padding: 0% 1% 0% 5%;
 	}
 
-	.intro h1 span {
-		color: #000000;
-	}
 
 	.intro p {
 		font-size: 1.35rem;
@@ -170,26 +107,6 @@
 	}
 	.landingPage {
 		align-items: flex-start;
-	}
-
-	.imageOne {
-		width: 78%;
-		height: 55vh;	
-	}
-
-	.imageTwo {
-		width: 78%;
-		height: 50vh;
-	}
-
-	.imageThree {
-		width: 78%;
-		height: 52vh;
-	}
-
-	.imageFour {
-		width: 78%;
-		height: 54vh;
 	}
 
 	.verticalBar {
@@ -203,6 +120,10 @@
 		position: absolute;
 		top: 25%;
 		right: 2%;
+	}
+
+	.buttonLinkContainer a {
+		padding: 3% 4%;
 	}
 
 	.featuredProjects h1 {
