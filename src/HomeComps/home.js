@@ -46,13 +46,48 @@ export default function Home() {
                     
                 </div>
 
+                <div className = "desc">
+                    <p>
+                        Learning Data Science and programming by working on 
+                        projects that help me learn new things and make my skills even
+                        sharper.
+                    </p>
+                </div>
+
                 <div className = "featuredProjects">
                     <h1>selected</h1>
                     <h1>projects</h1>
 
-                    <div>
-
+                    <div className="wrapper">
+                        <div className = "selectedProjectName">
+                            <div>
+                                <h1>Events App UI</h1>
+                                <p>UI - Flutter - Animation</p>
+                            </div>
+                        </div>
+                        <div className = "selectedProjectImage">
+                            <Link onClick = {runFunction} to = "/projects/4">
+                                <div className = "selectedProjectImageOne">
+                                </div>
+                            </Link>
+                        </div>
                     </div>
+
+                     <div className="wrapper">
+                        <div className = "selectedProjectName">
+                            <div>
+                                <h1>Convex Hull Visualization</h1>
+                                <p>Convex Hull - HTML - CSS - JS</p>
+                            </div>
+                        </div>
+                        <div className = "selectedProjectImage">
+                            <Link onClick = {runFunction} to = "/projects/10">
+                                <div className = "selectedProjectImageTwo">
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    
 
 
                     <div className = "buttonLinkContainer">
