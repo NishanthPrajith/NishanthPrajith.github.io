@@ -46,7 +46,7 @@ export default function Home() {
                     
                 </div>
 
-                <div className = "desc">
+                <div className = "descHome">
                     <p>
                         Learning Data Science and programming by working on 
                         projects that help me learn new things and make my skills even

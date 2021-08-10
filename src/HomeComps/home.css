@@ -10,12 +10,12 @@
 	background-position: right bottom;
 }
 
-.desc {
+.descHome {
 	margin: 15% 10%;
 	font-size: 1.8rem;
 }
 
-.desc p {
+.descHome p {
 	width: 65%;
 }
 
@@ -181,11 +181,11 @@
 		font-size: 2.3rem;
 	}
 
-	.desc p {
+	.descHome p {
 		width: 100%;
 	}
 
-	.desc {
+	.descHome {
 		margin: 25% 10%;
 		font-size: 1.3rem;
 	}
