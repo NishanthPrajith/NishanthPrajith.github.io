@@ -13,7 +13,7 @@ export default function Home() {
             opacity: 1,
             transition: {
                 ease: "easeInOut",
-                default: { delay: 0.5, duration: 1 },
+                default: { delay: 1.5, duration: 1 },
             },
         },
     }
@@ -84,7 +84,9 @@ export default function Home() {
                 <div className = "emailRequest">
                     <div>
                         <h1>Have a project idea? <br></br>Contact me.</h1>
-                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillOne">
+                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" style = {{
+                          marginTop: "3%"
+                        }} className = "buttonFillOne">
                             <a href = "mailto:nishanth.prajith@gmail.com">
                                 <p className = "button">Send an Email &#8594;</p>
                             </a>

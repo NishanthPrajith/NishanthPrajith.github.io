@@ -83,7 +83,7 @@ export default function Project() {
                     <div>
                         <h1>My Projects</h1>
                         <p>This is a collection of all the projects I have worked on, it includes the ones available publicly on GitHub as well as ones not available on GitHub.</p>
-                    </div>    
+                    </div>
                 </div>
 
                 <div className = "listofProjects">
@@ -276,7 +276,7 @@ export default function Project() {
                 <div className = "emailRequest">
                     <div>
                         <h1>Have a project idea? <br></br>Contact me.</h1>
-                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillOne">
+                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillThree">
                             <a href = "mailto:nishanth.prajith@gmail.com">
                                 <p className = "button">Send an Email &#8594;</p>
                             </a>

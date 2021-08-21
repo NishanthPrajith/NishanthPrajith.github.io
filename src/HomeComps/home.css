@@ -66,10 +66,9 @@
 .buttonLinkContainer {
 	width: 100%;
 	display: flex;
-	padding-top: 3%;
+	padding-top: 6%;
 	padding-bottom: 10%;
 	justify-content: center;
-
 }
 
 .buttonLinkContainer a {
@@ -84,7 +83,8 @@
 }
 
 .buttonLinkContainer a:hover {
-	background-color: #000000;
+	background-color: #d37d3a;
+	border: none;
 	color: #ffffff;
 	transform: scale(1.06);
 }
@@ -100,18 +100,20 @@
 .wrapper div p {
 	font-size: 1.05rem;
 	font-weight: 300;
+	color: #e9eeec;
 }
 
 .wrapper div h2 {
 	font-size: 2.5rem;
 	margin-top: 3%;
+	color: #e9eeec;
 }
 
 .projectOne {
 	width: 86%;
 	padding: 7%;
 	grid-column: span 3 / auto;
-	background-color: #eaeaeb;
+	background-color: #d37d3a;
 	border-radius: 15px;
 }
 
@@ -119,7 +121,7 @@
 	width: 94%;
 	padding: 3% 0% 0% 3%;
 	grid-column: span 6 / auto;
-	background-color: #eaeaeb;
+	background-color: #626494;
 	border-radius: 15px;
 	background-image: url("../images/four.png");
 	background-size: 55%;
@@ -131,7 +133,7 @@
 	width: 92%;
 	padding: 3%;
 	grid-column: span 9 / auto;
-	background-color: #eaeaeb;
+	background-color: #baaca1;
 	border-radius: 15px;
 	background-image: url("../images/eight.png");
 	background-size: 50%;

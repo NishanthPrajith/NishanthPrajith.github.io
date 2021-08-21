@@ -121,7 +121,7 @@
 
 
 .banner {
-	background-color: #000000;
+	background-color: #37393a;
 	width: 100%;
 	height: 50vh;
 	display: grid;
@@ -129,7 +129,6 @@
 	margin: 25vh 0;
 	overflow: hidden;
 }
-
 .resume {
 	display: grid;
 	width: 88%;
@@ -139,13 +138,13 @@
 }
 
 
-.buttonFill {
+.buttonFillEight {
 	width: 50px;
 	height: 50px;
 	display: grid;
 	border-radius: 50px;
 	align-items: center;
-	background-color: #EAEAEB;
+	background-color: #d37d3a;
 	white-space: nowrap;
 	cursor: pointer;
 }
@@ -174,18 +173,18 @@
 .marquee__inner span {
     font-size: 5rem;
     transform: skewX(10deg);
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #e9eeec;
 }
 
 .marquee__innerRight span {
 	font-size: 5rem;
     transform: skewX(-10deg);
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #e9eeec;
 }
 
 
 .quote {
-	background-color: #f3f3f3;
+	background-color: #74838a;
 	height: 60vh;
 	margin-top: 20vh;
 	display: grid;
@@ -195,6 +194,10 @@
 
 .quote div {
 	width: 65%;
+}
+
+.quote p {
+	color: #e9eeec;
 }
 
 .quote p:nth-child(1) {

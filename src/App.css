@@ -2,6 +2,8 @@
 
 body {
   overscroll-behavior-y: none;
+  background-color: #e9eeec;
+  color: #37393a;
 }
 
 .App {
@@ -11,18 +13,14 @@ body {
 
 
 .scroll {
-  padding: 8vh 0;
+  padding: 3vh 0;
 }
 
 * {
   margin: 0;
-  color: #000000;
+  color: #37393a;
   font-family: "DM Sans",sans-serif;
   font-size: 400;
-}
-
-.versionNumber p {
-  color: #434448;
 }
 
 .versionNumber {

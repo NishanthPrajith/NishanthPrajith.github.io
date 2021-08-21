@@ -24,7 +24,7 @@ a {
 .emailRequest {
 	height: 50vh;
 	padding: 0% 10%;
-	background-color: #EAEAEB;
+	background-color: #74838a;
 	display: grid;
 	align-items: center;
 }
@@ -34,7 +34,15 @@ a {
 	font-size: 2.8rem;
 }
 
-.buttonFillOne {
+.emailRequest div h1 {
+	color: #e9eeec;
+}
+
+.emailRequest div p {
+	color: #e9eeec;
+}
+
+.buttonFillThree {
 	width: 50px;
 	height: 50px;
 	margin-top: 5vh;
@@ -42,7 +50,7 @@ a {
 	display: grid;
 	border-radius: 50px;
 	align-items: center;
-	background-color: #C1C1C2;
+	background-color: #d37d3a;
 	white-space: nowrap;
 	cursor: pointer;
 }
@@ -88,17 +96,22 @@ hr {
 	color: #6F7071;
 }
 
+
+
 .individualProject div:nth-child(2) p {
 	font-size: 2rem;
-	color: #000000;
+	color: #37393a;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
 }
 
+.individualProject:hover div:nth-child(2) p {
+	color: #e9eeec;
+}
 
 .individualProject div:nth-child(2) div {
-	background-color: #EAEAEB;
+	background-color: #d37d3a;
 	display: inline-block;
 	border-radius: 100%;
 	display: grid;
@@ -120,7 +133,7 @@ hr {
 		height: 55vh;
 	}
 
-	.emailRequest h1 { 
+	.emailRequest h1 {
 		width: 70%;
 	}
 }
@@ -143,7 +156,7 @@ hr {
 		margin-bottom: 10vh;
 	}
 
-	.emailRequest h1 { 
+	.emailRequest h1 {
 		width: 70%;
 	}
 
@@ -195,7 +208,7 @@ hr {
 		margin-bottom: 10vh;
 	}
 
-	.emailRequest h1 { 
+	.emailRequest h1 {
 		width: 90%;
 		font-size: 2.3rem;
 	}
@@ -247,7 +260,7 @@ hr {
 		margin-bottom: 10vh;
 	}
 
-	.emailRequest h1 { 
+	.emailRequest h1 {
 		width: 90%;
 		font-size: 1.6rem;
 	}
@@ -266,14 +279,3 @@ hr {
 		font-size: 1rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

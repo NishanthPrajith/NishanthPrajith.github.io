@@ -171,13 +171,13 @@ export default function About() {
                     </motion.div>
                     <motion.div className = "loadingImage" ref = {reftwo} variants = {ImageFirstAnimation} animate = {controlsTwo} initial = "initial">
 
-                    </motion.div>                
+                    </motion.div>
                 </div>
 
                 <div className = "twoColumns">
                     <div className = "title">
                         <p>About Me</p>
-                    </div>  
+                    </div>
                     <div className = "context">
                         <p>My name is Nishanth Prajith. I am a Computer Science student from NYC aspiring
                         to be a Data Scientist. I have experience in both front end and back end development.
@@ -188,7 +188,7 @@ export default function About() {
 
                 <div className = "twoColumnsImages">
                     <motion.div className = "personalImageOne" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
-                    </motion.div> 
+                    </motion.div>
                     <motion.div className = "personalImageTwo" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
                     </motion.div>
                 </div>
@@ -272,15 +272,15 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className = "resume">
-                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFill">
+                <div className = "resume"> 
+                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillEight">
                         <a href = "mailto:nishanth.prajith@gmail.com">
                             <p className = "button">View Resume &#8594;</p>
                         </a>
                     </motion.div>
 
                 </div>
-                
+
             </motion.div>
         </div>
     )

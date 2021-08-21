@@ -48,7 +48,7 @@ function App() {
 
 
 
-  
+
 
   return (
     <div className="App">
@@ -58,6 +58,7 @@ function App() {
         <AnimatePresence>
           <Switch location = {location} key = {location.key}>
             <Route exact path = "/">
+              <MoveFrom />
               <Home />
             </Route>
             <Route exact path = "/about">
@@ -66,7 +67,7 @@ function App() {
             </Route>
             <Route exact path = "/projects/:projectId" render={ProjectId}/>
             <Route path = "/projects">
-              <MoveFrom /> 
+              <MoveFrom />
               <Project />
             </Route>
             <Route exact path = "/contactme">
@@ -78,7 +79,7 @@ function App() {
             </Route>
           </Switch>
         </AnimatePresence>
-        <Footer />    
+        <Footer />
       </div>
       <Version versionNumber = {"v1.0"} />
     </div>

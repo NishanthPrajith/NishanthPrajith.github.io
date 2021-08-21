@@ -44,7 +44,7 @@ export default function About() {
                         free to conact me to say hi or talk about an project. I will do my best to
                         reach out back to you.
                     </p>
-                    <motion.div variants = {hoverTestAnimation} whileHover = "hover" initial = "initial" className = "buttonFill">
+                    <motion.div variants = {hoverTestAnimation} whileHover = "hover" initial = "initial" className = "buttonFillOne">
                         <a href = "mailto:nishanth.prajith@gmail.com">
                             <p className = "button">Say Hello &#8594;</p>
                         </a>

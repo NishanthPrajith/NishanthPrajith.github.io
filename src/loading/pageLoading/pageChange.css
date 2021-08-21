@@ -1,5 +1,5 @@
 .circle {
-    background-color: #eff0f5;
+    background-color: #e9eeec;
     width: 5vh;
     height: 5vh;
     z-index: 18;
@@ -19,7 +19,7 @@
     left: 50%;
     border-radius: 100%;
     transform: translate(-50%, -50%);
-    background-color: #6c94d4;
+    background-color: #ee6117;
 }
 
 .placeholder {
