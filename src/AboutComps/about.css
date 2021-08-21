@@ -280,11 +280,11 @@
 	.quote {
 		height: 35vh;
 	}
-	
+
 	.quote div {
 		width: 85%;
 	}
-	
+
 	.quote p:nth-child(1) {
 		font-size: 1.6rem;
 	}
@@ -364,15 +364,15 @@
 	.quote {
 		height: 35vh;
 	}
-	
+
 	.quote div {
 		width: 90%;
 	}
-	
+
 	.quote p:nth-child(1) {
 		font-size: 1.3rem;
 	}
-	
+
 	.quote p:nth-child(2) {
 		font-size: 1rem;
 	}
@@ -384,7 +384,7 @@
 	.resumeData h1 {
 		font-size: 1.3rem;
 	}
-	
+
 	.resumeData h2, .resumeData p {
 		font-size: 1.1rem;
 		font-weight: 200;
@@ -405,5 +405,3 @@
 	}
 
 }
-
-

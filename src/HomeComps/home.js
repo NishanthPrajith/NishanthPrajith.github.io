@@ -30,7 +30,7 @@ export default function Home() {
 
 
     return (
-        <div> 
+        <div>
             <Helmet>
                 <title>Home Page | Nishanth Prajith</title>
             </Helmet>
@@ -43,12 +43,12 @@ export default function Home() {
                     </div>
 
                     <p className = "headerTag">Personal Portfolio 2021</p>
-                    
+
                 </div>
 
                 <div className = "descHome">
                     <p>
-                        Learning Data Science and programming by working on 
+                        Learning Data Science and programming by working on
                         projects that help me learn new things and make my skills even
                         sharper.
                     </p>
@@ -59,36 +59,19 @@ export default function Home() {
                     <h1>projects</h1>
 
                     <div className="wrapper">
-                        <div className = "selectedProjectName">
-                            <div>
-                                <h1>Events App UI</h1>
-                                <p>UI - Flutter - Animation</p>
-                            </div>
-                        </div>
-                        <div className = "selectedProjectImage">
-                            <Link onClick = {runFunction} to = "/projects/4">
-                                <div className = "selectedProjectImageOne">
-                                </div>
-                            </Link>
-                        </div>
+                      <div className = "projectOne">
+                        <p>UI - Flutter - Animation</p>
+                        <h2> Convex Hull Visualization </h2>
+                      </div>
+                      <div className = "projectTwo">
+                        <p>UI - Flutter - Animation</p>
+                        <h2> Events App UI </h2>
+                      </div>
+                      <div className = "projectThree">
+                        <p>UI - Flutter - Dribble - Transition - Animation</p>
+                        <h2> Fluid Card UI </h2>
+                      </div>
                     </div>
-
-                     <div className="wrapper">
-                        <div className = "selectedProjectName">
-                            <div>
-                                <h1>Convex Hull Visualization</h1>
-                                <p>Convex Hull - HTML - CSS - JS</p>
-                            </div>
-                        </div>
-                        <div className = "selectedProjectImage">
-                            <Link onClick = {runFunction} to = "/projects/10">
-                                <div className = "selectedProjectImageTwo">
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    
-
 
                     <div className = "buttonLinkContainer">
                         <Link to = '/projects' onClick = {runFunction}>
@@ -96,7 +79,7 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-                
+
 
                 <div className = "emailRequest">
                     <div>
