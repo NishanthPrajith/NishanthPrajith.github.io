@@ -223,6 +223,10 @@
 		right: 2%;
 	}
 
+	.mainContainer {
+		margin-top: 15%;
+	}
+
 	.featuredProjects h1:nth-child(2) {
 	  	margin-bottom: 0%;
 	}
