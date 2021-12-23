@@ -42,7 +42,7 @@ export default function Home() {
                         <h1>Nishanth <span>Prajith</span></h1>
                     </div>
 
-                    <p className = "headerTag">Personal Portfolio 2021</p>
+                    <p className = "headerTag">Personal Portfolio 2022</p>
 
                 </div>
 

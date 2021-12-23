@@ -81,7 +81,7 @@ function App() {
         </AnimatePresence>
         <Footer />
       </div>
-      <Version versionNumber = {"v1.0"} />
+      <Version versionNumber = {"v1.1"} />
     </div>
   );
 }

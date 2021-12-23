@@ -162,7 +162,7 @@ nav {
 
 .text {
     margin-bottom: 14%;
-    color: #434448;
+    color: #858585;
 }
 
 .sidenav a {
@@ -173,7 +173,7 @@ nav {
     margin-bottom: 8%;
     text-decoration: none;
     font-size: 2.5rem;
-    color: #000000;
+    color: rgb(51, 51, 51);
     display: block;
     transition: 0.3s;
     font-weight: 600;

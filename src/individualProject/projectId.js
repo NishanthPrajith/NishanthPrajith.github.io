@@ -99,6 +99,18 @@ export default function ProjectId ({match}) {
                         <div className = "desc">
                             <p>{ data[id - 1].desc }</p>
                         </div>
+                    </div>
+                    <div className = "box">
+                    </div>
+                    <div className = "box">
+                    </div>
+                    <div className = "title">
+                        <p>Language or <br/>Framework Used</p>
+                    </div>  
+                    <div className = "projectDesc">
+                        <div className = "desc">
+                            <p>{ data[id - 1].language }</p>
+                        </div>
                         { data[id - 1].projectLink && 
                             <div className = "projectlink">
                                 <a href = { data[id - 1].link } target = "_blank" rel="noreferrer noopener"> Launch Project </a> 

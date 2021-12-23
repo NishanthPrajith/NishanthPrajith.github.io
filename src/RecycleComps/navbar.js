@@ -44,7 +44,9 @@ export default function NavBar() {
     return (
         <motion.nav variants = {animation} initial = "initial" animate = "final">
             <div className = "logo">
-                <p>np.</p>
+                <Link to = '/'>
+                    <p>np.</p>
+                </Link>
             </div>
             <div className = "hamburger">
                 <div className={navBarClicked ? "mainMain" : ""}>

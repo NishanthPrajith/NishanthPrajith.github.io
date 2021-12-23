@@ -4,16 +4,24 @@ footer {
 	height: 10vh;
 	width: 100%;
 	margin-top: 3vh;
-	justify-items: center;
+	grid-template-columns: 60% 40%;
 	align-items: center;
-	white-space: nowrap;
 }
 
-footer p {
-	width: 30%;
-	text-align: center;
-	margin: 0;
-	display: inline-block;
+footer p:nth-child(1) {
+	width: 90%;
+	margin-left: 10%;
+}
+
+footer p:nth-child(2) {
+	width: 90%;
+	float: right;
+	margin-right: 12%;
+	text-align: right;
+}
+
+footer p:nth-child(2) a {
+	margin: 0 2%;
 }
 
 footer p i{

@@ -8,8 +8,8 @@ export default function Footer() {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Helmet>
             <footer>
-                
-                <p>&copy; NISHANTH PRAJITH 2021 <span> | </span>   
+                <p>&copy; 2021 Nishanth Prajith</p> 
+                <p>
                     <a href = "https://www.facebook.com/people/Nishanth-Prajith/100009547906410/" target = "_blank" rel="noreferrer noopener">
                         <i class="fa fa-facebook"></i>
                     </a>
@@ -23,7 +23,6 @@ export default function Footer() {
                         <i class="fa fa-github"></i>
                     </a>
                 </p>
-
             </footer>
         </div>
     )
