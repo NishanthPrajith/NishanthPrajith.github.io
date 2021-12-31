@@ -46,7 +46,7 @@
 }
 
 .title {
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 1.2rem;
 }
 
@@ -101,10 +101,16 @@
 		grid-template-columns: 100%;
 	}
 	.title {
-		padding-bottom: 13%;
+		padding-bottom: 6%;
 	}
 	.projectlink {
-		padding-top: 3vh;
+		padding-top: 8vh;
+	}
+	.box {
+		padding: 4.5%;
+	}
+	.title {
+		font-weight: 600;
 	}
 }
 
