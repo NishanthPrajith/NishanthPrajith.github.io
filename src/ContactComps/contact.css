@@ -7,7 +7,7 @@
 }
 
 .contact div h1 {
-	font-size: 4.5rem;
+	font-size: 4rem;
 	font-weight:  700;
 	margin-bottom: 2%;
 }
@@ -15,10 +15,27 @@
 .message {
 	width: 60%;
 	margin-bottom: 5%;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 100;
 }
 
+.social {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	row-gap: 30%;
+}
+
+.social div:nth-child(odd) h3{
+	padding-bottom: 3%;
+}
+
+.social div:nth-child(even) h3{
+	padding-bottom: 1.5%;
+}
+
+.socialmedia a {
+	margin-right: 4.2%;
+}
 
 .buttonFillOne {
 	width: 50px;
@@ -50,6 +67,32 @@
 	.message {
 		width: 80%;
 	}
+
+	.social {
+		grid-template-columns: 40% 60%;
+	}	
+
+	.socialmedia a {
+		margin-right: 7%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.message {
+		width: 85%;
+	}
+
+	.social div:nth-child(even) h3{
+		padding-bottom: 3.5%;
+	}
+
+	.social {
+		grid-template-columns: 50% 50%;
+	}	
+
+	.socialmedia a {
+		margin-right: 10%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -66,4 +109,19 @@
 		font-size: 2.5rem;
 		margin-bottom: 10%;
 	}
+
+	.social {
+		margin-top: 20%;
+		grid-template-columns: 100%;
+		row-gap: 20%;
+	}
+
+	.social div:nth-child(odd) h3{
+		padding-bottom: 1%;
+	}
+	
+	.social div:nth-child(even) h3{
+		padding-bottom: 1.5%;
+	}
+
 }
