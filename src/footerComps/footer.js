@@ -6,7 +6,7 @@ export default function Footer() {
         <div>
             
             <footer>
-                <p>Copyright &copy; 2021 </p> 
+                <p>Copyright &copy; 2022 </p> 
                 <p>
                     nishanth prajith
                 </p>
