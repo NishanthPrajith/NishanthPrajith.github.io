@@ -185,7 +185,6 @@ export default function About() {
                     </div>
                 </div>
 
-
                 <div className = "twoColumnsImages">
                     <motion.div className = "personalImageOne" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
                     </motion.div>

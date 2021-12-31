@@ -41,9 +41,6 @@ export default function Home() {
                             aspiring Data Scientist </p>
                         <h1>Nishanth <span>Prajith</span></h1>
                     </div>
-
-                    <p className = "headerTag">Personal Portfolio 2022</p>
-
                 </div>
 
                 <div className = "descHome">

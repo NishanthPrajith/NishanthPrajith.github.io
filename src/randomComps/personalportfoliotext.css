@@ -1,0 +1,24 @@
+
+
+.headerTag {
+	position: absolute;
+	position: fixed;
+	writing-mode: vertical-rl;
+	font-size: 0.95rem;
+	transform: scale(1, 1);
+	top: 17vh;
+	right: 1%;
+	z-index: 10;
+}
+
+
+@media screen and (max-width: 500px) {
+	.headerTag {
+		writing-mode: vertical-rl;
+		font-size: 0.95rem;
+		transform: scale(1, 1);
+		position: absolute;
+		top: 10%;
+		right: 2%;
+	}
+}

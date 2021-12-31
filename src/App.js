@@ -18,6 +18,8 @@ import Footer from './footerComps/footer'
 import ProjectId from './individualProject/projectId'
 import ErrorPage from './404Error'
 
+import PersonalPortfolioText from './randomComps/personalPortfolioText'
+
 import DotRing from "./RecycleComps/DotRing/DotRing";
 
 import { AnimatePresence } from 'framer-motion';
@@ -54,7 +56,9 @@ function App() {
     <div className="App">
       <DotRing />
       <NavBar></NavBar>
+      
       <div className = "scroll">
+        
         <AnimatePresence>
           <Switch location = {location} key = {location.key}>
             <Route exact path = "/">
@@ -81,7 +85,8 @@ function App() {
         </AnimatePresence>
         <Footer />
       </div>
-      <Version versionNumber = {"v1.1"} />
+      <PersonalPortfolioText />
+      <Version versionNumber = {"v1.2"} />
     </div>
   );
 }
