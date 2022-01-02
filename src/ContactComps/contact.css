@@ -107,7 +107,7 @@
 @media screen and (max-width: 500px) {
 	.message {
 		width: 85%;
-		font-size: 0.95rem;
+		font-size: 0.85rem;
 	}
 
 	.header {
@@ -115,13 +115,14 @@
 	}
 
 	.contact div h1 {
-		font-size: 0.85rem;
+		font-size: 1.1rem;
 		margin-bottom: 5%;
+		font-weight: 500;
 	}
 
 	.contact div h3 {
 		font-size: 1.1rem;
-		font-weight: 700;
+		font-weight: 900;
 		margin-bottom: 6%;
 	}
 	
@@ -135,7 +136,7 @@
 
 	.socialmedia a {
 		margin-right: 15%;
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 
 }

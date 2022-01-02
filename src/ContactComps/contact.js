@@ -30,7 +30,7 @@ export default function About() {
                 </div>
                 <div style = {{paddingLeft: "5%"}}>
                     <h1>
-                        Get in touch. 
+                        Get in touch 
                     </h1>
                     <h3>
                         <a href = "mailto:nishanth.prajith@gmail.com">
