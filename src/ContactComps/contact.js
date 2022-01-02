@@ -30,40 +30,33 @@ export default function About() {
                 </div>
                 <div style = {{paddingLeft: "5%"}}>
                     <h1>
-                        Get in <br/>
-                        - touch. 
+                        Get in touch. 
                     </h1>
+                    <h3>
+                        <a href = "mailto:nishanth.prajith@gmail.com">
+                            nishanth.prajith@gmail.com <i class="fa fa-paper-plane"></i>
+                        </a>
+                    </h3>
                     <p className = "message">
                         I am from India, living and studying in the United States of America. Feel
                         free to conact me to say hi or talk about an project. I will do my best to
                         reach out back to you.
                     </p>
                     <div className='social'>
-                        <div>
-                            <h3>Email</h3>
-                            <p>nishanth.prajith@gmail.com</p>
-                        </div>
-                        <div>
-                            <h3>Socials</h3>
-                            <p className='socialmedia'>
-                                <a href = "https://www.facebook.com/people/Nishanth-Prajith/100009547906410/" target = "_blank" rel="noreferrer noopener">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href = "https://www.instagram.com/nishanthprajith/" target = "_blank" rel="noreferrer noopener">
-                                    <i class="fa fa-instagram"></i>
-                                </a> 
-                                <a href = "https://www.linkedin.com/in/nishanth-prajith" target = "_blank" rel="noreferrer noopener">
-                                    <i class="fa fa-linkedin"></i>
-                                </a> 
-                                <a href = "https://github.com/NishanthPrajith" target = "_blank" rel="noreferrer noopener">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3>From</h3>
-                            <p>NYC</p>
-                        </div>
+                        <p className='socialmedia'>
+                            <a href = "https://www.facebook.com/people/Nishanth-Prajith/100009547906410/" target = "_blank" rel="noreferrer noopener">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href = "https://www.instagram.com/nishanthprajith/" target = "_blank" rel="noreferrer noopener">
+                                <i class="fa fa-instagram"></i>
+                            </a> 
+                            <a href = "https://www.linkedin.com/in/nishanth-prajith" target = "_blank" rel="noreferrer noopener">
+                                <i class="fa fa-linkedin"></i>
+                            </a> 
+                            <a href = "https://github.com/NishanthPrajith" target = "_blank" rel="noreferrer noopener">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </p>
                     </div>
                     
                 </div>
