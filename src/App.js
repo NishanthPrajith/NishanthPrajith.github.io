@@ -86,7 +86,7 @@ function App() {
         <Footer />
       </div>
       <PersonalPortfolioText />
-      <Version versionNumber = {"v1.2"} />
+      <Version versionNumber = {"v1.5"} />
     </div>
   );
 }

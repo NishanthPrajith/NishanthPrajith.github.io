@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Helmet } from 'react-helmet';
+import Pdf from '../documents/2.pdf';
 
 export default function About() {
 
@@ -175,7 +176,7 @@ export default function About() {
                 </div>
 
                 <div className = "twoColumns">
-                    <div className = "title">
+                    <div className = "heading">
                         <p>About Me</p>
                     </div>
                     <div className = "context">
@@ -192,74 +193,72 @@ export default function About() {
                     </motion.div>
                 </div>
 
-                <div className = "resumeInfo">
-                    <p className = "resumeTitle">Experience.</p>
-                    <div className = "resumeData">
-                        <div>
-                            <h1> Web Designer </h1>
-                        </div>
-                        <div>
-                            <h2> Thomas A. Edison C.T.E High School, Jamaica, NY </h2>
-                            <h3> I maintained the schools website, and updated it with new events and annoucments on a weekly basis. </h3>
-                        </div>
-                        <div>
-                            <p>2017</p>
+                <div className = "twoColumns">
+                    <div className = "heading">
+                        <p>Experience</p>
+                    </div>
+                    <div className = "context">
+                        <div className = "resumeData">
+                            <div>
+                                <p> Thomas A. Edison C.T.E High School, Jamaica, NY - 2017 </p>
+                            </div>
+                            <div>
+                                <h1> Web Designer </h1>
+                            </div>
+                            <div>
+                                <h3> I maintained the schools website, and updated it with new events and annoucments on a weekly basis. </h3>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="banner">
-                    <motion.div class="marqueeText" variants = {rightfade} ref = {refThree} animate = {controlsThree} initial = "initial">
-                        <div class="marquee__inner" aria-hidden="true">
-                            <span>Frontend</span>
-                            <span>Backend</span>
-                            <span>UI/UX</span>
+                <div className='Language'>
+                    <div className = "twoColumns">
+                        <div className = "heading">
+                            <p style={{color: "#fff"}}>Programming</p>
                         </div>
-                    </motion.div>
-
-                    <motion.div class="marqueeText" variants = {leftfade} ref = {refFour} animate = {controlsFour} initial = "initial">
-                        <div class="marquee__innerRight" aria-hidden="true">
-                            <span>Next.js</span>
-                            <span>Flutter</span>
-                        </div>
-                    </motion.div>
-
-                    <motion.div class="marqueeText" variants = {rightfade} ref = {refFive} animate = {controlsFive} initial = "initial">
-                        <div class="marquee__inner" aria-hidden="true">
-                            <span>Python</span>
-                            <span>JAVA</span>
-                            <span>C++</span>
-                            <span>Dart</span>
-                        </div>
-                    </motion.div>
-                </div>
-
-                <div className = "resumeInfo">
-                    <p className = "resumeTitle">Education.</p>
-                    <div className = "resumeData">
-                        <div>
-                            <h1> Computer Science </h1>
-                        </div>
-                        <div>
-                            <h2> City College Of New York, New York City, NY </h2>
-                            <h3> Currently, studying Computer science at the grove school of engineering. </h3>
-                        </div>
-                        <div>
-                            <p>2019</p>
+                        <div className = "context">
+                            <div className = "languages">
+                                <p>Flutter/Dart</p>
+                                <p>C++</p>
+                                <p>JAVA</p>
+                                <p>Python</p>
+                                <p>HTML, CSS</p>
+                                <p>Javascript</p>
+                                <p>React</p>
+                                <p>SQL</p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className = "resumeData">
-                        <div>
-                            <h1> Web Design </h1>
+                <div className = "twoColumns">
+                    <div className = "heading">
+                        <p>Education</p>
+                    </div>
+                    <div className = "context">
+                        <div className = "resumeData">
+                            <div>
+                                <p> City College Of New York, New York City, NY - 2019 </p>
+                            </div>
+                            <div>
+                                <h1> Computer Science </h1>
+                            </div>
+                            <div>
+                                <h3> Currently, studying Computer science at the grove school of engineering. </h3>
+                            </div>
+                            <hr style={{border: "white 1px solid", backgroundColor: "#dfdfdf", height: "0.5px", width: "100%"}} />
                         </div>
-                        <div>
-                            <h2> Thomas A. Edison C.T.E High School, Jamaica, NY </h2>
-                            <h3> I studied web developement and graphic design, specically HTML, CSS, Adobe Photoshop and Illustrator. </h3>
-                        </div>
-                        <div>
-                            <p>2019</p>
+                        <div className = "resumeData">
+                            <div>
+                                <p> Thomas A. Edison C.T.E High School, Jamaica, NY - 2016 </p>
+                            </div>
+                            <div>
+                                <h1> Web Design </h1>
+                            </div>
+                            <div>
+                                <h3> I studied web developement and graphic design, specically HTML, CSS, Adobe Photoshop and Illustrator. </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -273,7 +272,7 @@ export default function About() {
 
                 <div className = "resume"> 
                     <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillEight">
-                        <a href = "mailto:nishanth.prajith@gmail.com">
+                        <a href = {Pdf} target="_blank">
                             <p className = "button">View Resume &#8594;</p>
                         </a>
                     </motion.div>
