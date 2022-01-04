@@ -94,6 +94,15 @@
 	font-size: 1rem;
 }
 
+.resumeData h3 {
+	font-size: 1.1rem;
+	font-weight: 50;
+	margin-top: 2.5%;
+	line-height: 35px;
+	color: #686868;
+}
+
+
 .Language {
 	background-color: #000;
 	padding: 5% 0 9% 0;
@@ -112,13 +121,6 @@
 	color: #ffffff;
 }
 
-.resumeData h3 {
-	font-size: 1.1rem;
-	font-weight: 50;
-	margin-top: 2.5%;
-	line-height: 35px;
-	color: #686868;
-}
 
 .banner {
 	background-color: #37393a;
@@ -315,9 +317,17 @@
 }
 
 @media screen and (max-width: 500px) {
+	.languages p {
+		font-size: 0.95rem;
+	}
+
 	.landing .title {
 		font-size: 4rem;
 		font-weight: 700;
+	}
+
+	.Language {
+		padding: 10% 0 23% 0;
 	}
 
 	.loadingImage {
@@ -373,18 +383,20 @@
 	}
 
 	.resumeData h1 {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
+		margin: 6% 0;
 	}
 
-	.resumeData h2, .resumeData p {
-		font-size: 1.1rem;
+	.resumeData p {
+		font-size: 0.9rem;
 		font-weight: 200;
 	}
 
 	.resumeData h3 {
-		font-size: 1.1rem;
+		font-size: 0.97rem;
 		font-weight: 100;
 		margin-top: 1%;
+		padding-bottom: 5%;
 	}
 
 	.resumeData div {
