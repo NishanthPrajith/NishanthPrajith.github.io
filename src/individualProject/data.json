@@ -92,6 +92,7 @@
     "imageColor" : "#EDEDEE",
     "projectLink" : true,
     "link" : "https://github.com/NishanthPrajith/Convex_Hull_Visualization",
+    "weblink" : "https://nishanthprajith.github.io/Convex_Hull_Visualization/",
     "videoCondition" : true,
     "language" : ["HTML, CSS, JS"]
  },

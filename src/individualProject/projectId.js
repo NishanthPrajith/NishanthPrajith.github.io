@@ -81,10 +81,14 @@ export default function ProjectId ({match}) {
         <div>
             <MoveFrom />
             <motion.div variants = {animation} initial = "initial" animate = "final" className = "projectIdPage">
+
                 <div className = "titleContainer">
                     <div>
                         <p>{ data[id - 1].tags }</p>
-                        <h1>{ data[id - 1].title }</h1>
+                        <h1 style={{marginBottom: "7vh"}}>{ data[id - 1].title }</h1>
+                        <Link to = {"/projects"} onClick = { changeCursor }>
+                            Go back to all projects
+                        </Link>
                     </div>
                 </div>
 
@@ -111,11 +115,18 @@ export default function ProjectId ({match}) {
                         <div className = "desc">
                             <p>{ data[id - 1].language }</p>
                         </div>
+                        <div className='projectLinks'>
                         { data[id - 1].projectLink && 
                             <div className = "projectlink">
                                 <a href = { data[id - 1].link } target = "_blank" rel="noreferrer noopener"> Launch Project </a> 
                             </div>
                         }
+                        { data[id - 1].weblink && 
+                            <div className = "projectlink">
+                                <a href = { data[id - 1].weblink } target = "_blank" rel="noreferrer noopener">Website Link </a> 
+                            </div>
+                        }
+                        </div>
                     </div>
                 </div>
 

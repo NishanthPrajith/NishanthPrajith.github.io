@@ -50,6 +50,11 @@
 	font-size: 1.2rem;
 }
 
+.projectLinks {
+	display: grid;
+	grid-template-columns: repeat(2, 20%);
+}
+
 .projectDesc a {	
 	margin-top: 6vh;
 	font-size: 1.15rem;
