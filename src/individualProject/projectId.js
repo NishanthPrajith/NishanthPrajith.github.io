@@ -7,23 +7,6 @@ import { Link } from "react-router-dom";
 
 import data from './data.json'
 
-import one from '../images/one.png'
-import two from '../images/two.png'
-import three from '../images/three.png'
-import four from '../images/four.png'
-import five from '../images/five.png'
-import six from '../images/six.png'
-import seven from '../images/seven.png'
-import eight from '../images/eight.png'
-import nine from '../images/nine.png'
-import ten from '../images/ten.png'
-
-import fourVideo from '../video/four.gif'
-import fiveVideo from '../video/five.gif'
-import sevenVideo from '../video/seven.gif'
-import eightVideo from '../video/eight.gif'
-import tenVideo from '../video/ten.gif'
-
 export default function ProjectId ({match}) {
 
     const id = match.params.projectId;
@@ -66,17 +49,6 @@ export default function ProjectId ({match}) {
         }
     }
 
-    var imageLinkArray = [one, two, three, four, five, six, seven, eight, nine, ten]
-    var videoLinkArray = ["", "", "", fourVideo, fiveVideo, "", sevenVideo, eightVideo, "", tenVideo]
-    
-    function imageLink() {
-        return imageLinkArray[id - 1];
-    }
-
-    function videoLink() {
-        return videoLinkArray[id - 1];
-    }
-
     return (
         <div>
             <MoveFrom />
@@ -92,10 +64,24 @@ export default function ProjectId ({match}) {
                     </div>
                 </div>
 
-                <div className = "portfolioImage" style = {{ backgroundImage : "url(" + imageLink() + ")", backgroundColor : data[id - 1].imageColor }}>             
+                <div className = "portfolioImage" style = {{ backgroundImage : "url(/images" + data[id - 1].imageLink + ")", backgroundColor : data[id - 1].imageColor }}>             
                 </div>
 
                 <div className = "TwoColumns">
+                    {data[id - 1].projectStatus && <div className = "title">
+                        <p>Project <br />Status</p>
+                    </div> }
+                    {data[id - 1].projectStatus && <div>
+                        <div>
+                            <p><i>{ data[id - 1].projectStatus }</i></p>
+                        </div> 
+                    </div> }
+                    {data[id - 1].projectStatus && 
+                    <div className = "box">
+                    </div> }
+                    {data[id - 1].projectStatus && 
+                    <div className = "box">
+                    </div> }
                     <div className = "title">
                         <p>Project <br />Description</p>
                     </div>  
@@ -113,7 +99,15 @@ export default function ProjectId ({match}) {
                     </div>  
                     <div className = "projectDesc">
                         <div className = "desc">
-                            <p>{ data[id - 1].language }</p>
+                            <p>
+                            {
+                                data[id - 1].language.map((language, index) => {
+                                    return (
+                                        <span style={(index > 0) ? {marginLeft: "5%"} : {}} key = {index}>{ language }</span>
+                                    )
+                                })
+                            }
+                            </p>
                         </div>
                         <div className='projectLinks'>
                         { data[id - 1].projectLink && 
@@ -126,13 +120,37 @@ export default function ProjectId ({match}) {
                                 <a href = { data[id - 1].weblink } target = "_blank" rel="noreferrer noopener">Website Link </a> 
                             </div>
                         }
+                        { data[id - 1].bloglink && 
+                            <div className = "projectlink">
+                                <a href = { data[id - 1].bloglink } target = "_blank" rel="noreferrer noopener">Blog Link </a> 
+                            </div>
+                        }
+                        { data[id - 1].mlLink && 
+                            <div className = "projectlink">
+                                <a href = { data[id - 1].mlLink } target = "_blank" rel="noreferrer noopener">ML models Link </a> 
+                            </div>
+                        }
                         </div>
                     </div>
                 </div>
 
+                { data[id - 1].otherImages && <p className = "videoTitle">Images</p>}
+                { data[id - 1].otherImages && 
+                <div className='imageContainer'>
+                    {
+                        data[id - 1].otherImages.map((info) => {
+                            return (
+                                <div style={{backgroundColor: info.color, height: "60vh", backgroundImage: "url(/images/" + info.image + ")", backgroundSize: "contain",
+                                    backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
+                                </div>
+                            );
+                            })
+                    }   
+                </div> }
+
                 { data[id - 1].videoCondition && <p className = "videoTitle">Video</p>}
                 { data[id - 1].videoCondition && 
-                    <div className = "videoContainer" style = {{backgroundImage : "url(" + videoLink() + ")", backgroundColor : data[id - 1].imageColor }}>
+                    <div className = "videoContainer" style = {{backgroundImage : "url(/images" + data[id - 1].videoLink + ")", backgroundColor : data[id - 1].imageColor }}>
                     </div>
                 }
 

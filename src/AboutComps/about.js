@@ -6,6 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { Helmet } from 'react-helmet';
 import Pdf from '../documents/2.pdf';
 
+
 export default function About() {
 
     const animation = {
@@ -203,10 +204,15 @@ export default function About() {
                                 <p> Thomas A. Edison C.T.E High School, Jamaica, NY - 2017 </p>
                             </div>
                             <div>
-                                <h1> Web Designer </h1>
+                                <h1> W.B.L (Work-Based Learning) </h1>
                             </div>
                             <div>
-                                <h3> I maintained the schools website, and updated it with new events and annoucments on a weekly basis. </h3>
+                                <h3>Senior Web Design Intern</h3>
+                                <ul>
+                                    <li>Designed, developed, maintained, and updated a variety of websites as assigned keeping in mind the UI/UX requirements.</li>
+                                    <li>Oversaw development team to update and maintain the school’s official site and its external client sites.</li>
+                                    <li>Updated web style sheets and pages on a regular basis as required.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -239,13 +245,16 @@ export default function About() {
                     <div className = "context">
                         <div className = "resumeData">
                             <div>
-                                <p> City College Of New York, New York City, NY - 2019 </p>
+                                <p>The City College Of New York, <i>Grove School of Engineering</i>, New York City, NY - 2019 </p>
                             </div>
                             <div>
                                 <h1> Computer Science </h1>
                             </div>
                             <div>
-                                <h3> Currently, studying Computer science at the grove school of engineering. </h3>
+                                <h3> Bachelor of Science in Computer Science, GPA: 3.94/4.00</h3>
+                                <p><b>Relevant Courses :</b> <i>Algorithms, Data Structures, Introduction to Applied Mathematical Computation, Software Design Lab, 
+                                    Database Systems, Introduction to Data Science, Machine Learning, Software Engineering, Senior Design (Applied Machine Learning), 
+                                    Numerical Issues in Scientific Programming, Computational Complexity.</i></p>
                             </div>
                             <hr style={{border: "white 1px solid", backgroundColor: "#dfdfdf", height: "0.5px", width: "100%"}} />
                         </div>

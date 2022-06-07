@@ -89,6 +89,14 @@
 	background-position: center;
 }
 
+.imageContainer {
+	margin: 0 8%;
+	width: 84%;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(2, 50%);
+}
+
 .nextProject {
 	width: 80%;
 	padding: 0 10%;
@@ -124,6 +132,14 @@
 		margin: 0 12%;
 		padding-bottom: 15vh;
 	}
+
+	.imageContainer {
+		margin: 0 8%;
+		width: 84%;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(1, 100%);
+	}
 	.projectDesc {
 		font-size: 1.2rem;
 	}
@@ -132,8 +148,14 @@
 		font-size: 1.4rem;
 	}
 
+	.projectLinks {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+	}
+
 	.titleContainer h1 {
-		font-size: 3.8rem;
+		padding-top: 3%;
+		font-size: 3.0rem;
 	}
 
 	.titleContainer p {
