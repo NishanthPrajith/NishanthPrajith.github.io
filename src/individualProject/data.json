@@ -84,14 +84,14 @@
    },
 
    {
-      "title" : "NYC Water Usage",
-      "tags" : "Python - pandas - numpy",
-      "desc" : "The is a simple flutter UI design that was inspired by a design from dribble. The main aspect of the UI was to create an transition when the user clicks on the play/pause button.",
+      "title" : "Curve Fitting using Least Squares",
+      "tags" : "Python - pandas - numpy - NYC Open Data",
+      "desc" : "In this jupyter notebook a class was written that generalizes the least squares approximation to a certain degree of precision. This will help ensure that with any sets of data, the least squares approximation is easily available rather than having to calculate it out for each dataset and each degree of polynomial. In addition, using the general least squares approximation class curve fitting was performed on the NYC population and water consumption dataset gathered from NYC Open Data and analyzing the results.",
       "projectLink" : true,
-      "link" : "https://github.com/NishanthPrajith/musicAppUI",
-      "imageColor" : "#142024",
+      "link" : "https://github.com/NishanthPrajith/Curve-Fitting-using-Least-Squares-Approximation",
+      "imageColor" : "#E6E6E6",
       "videoCondition" : false,
-      "imageLink" : "/one.png",
+      "imageLink" : "/curveFitting_main.png",
       "language" : ["Python"]
    },
 
