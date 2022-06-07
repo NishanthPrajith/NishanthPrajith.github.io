@@ -59,23 +59,23 @@
       "otherImages" : [
          {
             "color" : "#ECB745",
-            "image" : "/ecommerce_a.png"
+            "image" : "/eCommerce_a.png"
          },
          {
             "color" : "#ECB745",
-            "image" : "/ecommerce_b.png"
+            "image" : "/eCommerce_b.png"
          },
          {
             "color" : "#ECB745",
-            "image" : "/ecommerce_c.png"
+            "image" : "/eCommerce_c.png"
          },
          {
             "color" : "#ECB745",
-            "image" : "/ecommerce_d.png"
+            "image" : "/eCommerce_d.png"
          },
          {
             "color" : "#ECB745",
-            "image" : "/ecommerce_e.png"
+            "image" : "/eCommerce_e.png"
          }
       ],
       "imageLink" : "/eCommerce_main.png",
