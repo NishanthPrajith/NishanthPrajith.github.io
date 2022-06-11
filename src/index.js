@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import MouseContextProvider from "./context/mouse-context";
 import {
-  BrowserRouter as Router,} from 'react-router-dom'
+  HashRouter as Router,} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
