@@ -49,6 +49,16 @@ export default function ProjectId ({match}) {
         }
     }
 
+    function moveHover(index, type) {
+        if (type) {
+            var v = document.getElementsByClassName("descriptiveText")[index]
+            v.style.display = "block";
+        } else {
+            var v = document.getElementsByClassName("descriptiveText")[index]
+            v.style.display = "none";
+        }
+    }
+
     return (
         <div>
             <MoveFrom />
@@ -138,10 +148,10 @@ export default function ProjectId ({match}) {
                 { data[id - 1].otherImages && 
                 <div className='imageContainer'>
                     {
-                        data[id - 1].otherImages.map((info) => {
+                        data[id - 1].otherImages.map((info, index) => {
                             return (
-                                <div style={{backgroundColor: info.color, height: "60vh", backgroundImage: "url(/images/" + info.image + ")", backgroundSize: "contain",
-                                    backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
+                                <div style={{backgroundColor: info.color, height: "60vh", borderRadius: "5px", backgroundImage: "url(/images/" + info.image + ")", backgroundSize: "contain",
+                                    backgroundRepeat: "no-repeat", backgroundPosition: "center", display: "grid", alignContent: "flex-end"}}>
                                 </div>
                             );
                             })

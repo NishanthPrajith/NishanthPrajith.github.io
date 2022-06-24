@@ -12,24 +12,29 @@
       "language" : ["Dart/Flutter", "Python", "Firebase"],
       "otherImages" : [
          {
-            "color" : "#A60310",
-            "image" : "/carDetection01.png"
+            "color" : "#ddc7a0",
+            "image" : "/carDetection01.png",
+            "description" : "Camera Page"
          },
          {
-            "color" : "#A60310",
-            "image" : "/carDetection02.png"
+            "color" : "#ddc7a0",
+            "image" : "/carDetection02.png",
+            "description" : "Camera Page (after photo was taken)"
          },
          {
-            "color" : "#A60310",
-            "image" : "/carDetection03.png"
+            "color" : "#ddc7a0",
+            "image" : "/carDetection03.png",
+            "description" : "Detailed Information Page"
          },
          {
-            "color" : "#A60310",
-            "image" : "/carDetection04.png"
+            "color" : "#ddc7a0",
+            "image" : "/carDetection04.png",
+            "description" : "Account Page"
          },
          {
-            "color" : "#A60310",
-            "image" : "/carDetection05.png"
+            "color" : "#ddc7a0",
+            "image" : "/carDetection05.png",
+            "description" : "Search Page"
          }
       ],
       "mlLink" : "https://github.com/NishanthPrajith/ML_Models"
@@ -59,23 +64,28 @@
       "otherImages" : [
          {
             "color" : "#ECB745",
-            "image" : "/eCommerce_a.png"
+            "image" : "/eCommerce_a.png",
+            "description" : "Home Page"
          },
          {
             "color" : "#ECB745",
-            "image" : "/eCommerce_b.png"
+            "image" : "/eCommerce_b.png",
+            "description" : "Checkout Page"
          },
          {
             "color" : "#ECB745",
-            "image" : "/eCommerce_c.png"
+            "image" : "/eCommerce_c.png",
+            "description" : "User's Page"
          },
          {
             "color" : "#ECB745",
-            "image" : "/eCommerce_d.png"
+            "image" : "/eCommerce_d.png",
+            "description" : "Chef's Page"
          },
          {
             "color" : "#ECB745",
-            "image" : "/eCommerce_e.png"
+            "image" : "/eCommerce_e.png",
+            "description" : "Manager's Page"
          }
       ],
       "imageLink" : "/eCommerce_main.png",

@@ -89,6 +89,10 @@
 	background-position: center;
 }
 
+.descriptiveText {
+	display: none;
+}
+
 .imageContainer {
 	margin: 0 8%;
 	width: 84%;
