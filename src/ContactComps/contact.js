@@ -39,7 +39,7 @@ export default function About() {
                     </h3>
                     <p className = "message">
                         I am from India, living and studying in the United States of America. Feel
-                        free to conact me to say hi or talk about an project. I will do my best to
+                        free to contact me to say hi or talk about a project. I will do my best to
                         reach out back to you.
                     </p>
                     <div className='social'>
