@@ -32,7 +32,7 @@ export default function Home() {
     return (
         <div>
             <Helmet>
-                <title>Home Page | Nishanth Prajith</title>
+                <title>Home Page • Nishanth Prajith</title>
             </Helmet>
             <motion.div className = "mainContainer" variants = {animation} initial = "initial" animate = "final">
                 <div className = "landingPage">
@@ -76,20 +76,7 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-
-
-                <div className = "emailRequest">
-                    <div>
-                        <h1>Have a project idea? <br></br>Contact me.</h1>
-                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" style = {{
-                          marginTop: "3%"
-                        }} className = "buttonFillOne">
-                            <a href = "mailto:nishanth.prajith@gmail.com">
-                                <p className = "button">Send an Email &#8594;</p>
-                            </a>
-                        </motion.div>
-                    </div>
-                </div>
+                
             </motion.div>
         </div>
     )

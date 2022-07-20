@@ -78,84 +78,44 @@ export default function Project() {
     return (
         <div>
             <Helmet>
-                <title>Projects Page | Nishanth Prajith</title>
+                <title>Projects Page • Nishanth Prajith</title>
             </Helmet>
             <motion.div variants = {animation} initial = "initial" animate = "final">
                 <div className = "headerLanding">
                     <div>
-                        <h1>My Projects</h1>
-                        <p>This is a collection of all the projects I have worked on, it includes the ones available publicly on GitHub as well as ones not available on GitHub.</p>
+                        <h1>Collection of all my projects.</h1>
                     </div>
                 </div>
-
                 <div className = "listofProjects">
-                    <div>
-                        {
-                            data.map((project, index) => {
-                               if (index % 2 == 0) {
-                                   return (
-                                    <div>
-                                        <Link to = {"/projects/" + (index + 1)} onClick = { changeCursor }>
-                                            <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject">
-                                                <div>
-                                                    <h1>{project.title}</h1>
-                                                    <p>{project.tags}</p>
-                                                </div>
-                                                <div>
-                                                    <motion.div variants = {hoverchild}>
-                                                        <p> > </p>
-                                                    </motion.div>
-                                                </div>
-                                            </motion.div>
-                                        </Link>
-                                        <hr />
-                                    </div>
-                                   );
-                               }
-                            })   
-                        }
+
+                    <div className='heading'>
+                        <div className='headers'>
+                            <p>PROJECT NAME</p>
+                            <p>TAGS</p>
+                        </div>
+
+                        <hr className='stripe'></hr>
                     </div>
 
                     <div>
                         {
                             data.map((project, index) => {
-                               if (index % 2 == 1) {
-                                   return (
+                                return (
                                     <div>
                                         <Link to = {"/projects/" + (index + 1)} onClick = { changeCursor }>
                                             <motion.div variants = {hoverProjectAnimation} onMouseEnter={() => cursorChangeHandler("project")} onMouseLeave={() => cursorChangeHandler("")} initial = "initial" whileHover = "animate" className = "individualProject">
-                                                <div>
-                                                    <h1>{project.title}</h1>
-                                                    <p>{project.tags}</p>
-                                                </div>
-                                                <div>
-                                                    <motion.div variants = {hoverchild}>
-                                                        <p> > </p>
-                                                    </motion.div>
-                                                </div>
+                                                <h1>{project.title}</h1>
+                                                <p>{project.tags}</p>
                                             </motion.div>
                                         </Link>
-                                        <hr />
+                                        <hr className='stripe'></hr>
                                     </div>
-                                   );
-                               }
+                                );
                             })   
                         }
                     </div>
-
                 </div>
 
-
-                <div className = "emailRequest">
-                    <div>
-                        <h1>Have a project idea? <br></br>Contact me.</h1>
-                        <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillThree">
-                            <a href = "mailto:nishanth.prajith@gmail.com">
-                                <p className = "button">Send an Email &#8594;</p>
-                            </a>
-                        </motion.div>
-                    </div>
-                </div>
             </motion.div>
         </div>
     )

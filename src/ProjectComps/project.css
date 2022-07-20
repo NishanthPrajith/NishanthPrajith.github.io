@@ -1,12 +1,14 @@
 .headerLanding h1 {
 	font-size: 6rem;
 	font-weight: 500;
+	color: #1C1D20;
 }
 
 .headerLanding {
 	height: 95vh;
+	width: 50%;
 	display: grid;
-	padding-left: 10%;
+	padding: 3% 12%;
 	align-items: center;
 }
 
@@ -14,71 +16,39 @@ a {
 	text-decoration: none;
 }
 
-.headerLanding p {
-	font-size: 1.4rem;
-	width: 60%;
-	margin: 3% 0%;
-	padding-left: 10%;
+.listofProjects .headers p {
+	color: #999D9E;
+	font-weight: 500;
+	font-size: 0.9rem;
 }
 
-.emailRequest {
-	height: 50vh;
-	padding: 0% 10%;
-	background-color: #74838a;
+.headers {
+	display: grid;
+	grid-template-columns: 45% 55%;
+	position: relative;
+	margin: 0 7%;
+}
+
+.individualProject {
+	margin: 0 7%;
 	display: grid;
 	align-items: center;
+	z-index: 0;
+	position: relative;
+	grid-template-columns: 45% 55%;
 }
 
-.emailRequest h1 {
-	width: 50%;
-	font-size: 2.8rem;
-}
-
-.emailRequest div h1 {
-	color: #e9eeec;
-}
-
-.emailRequest div p {
-	color: #e9eeec;
-}
-
-.buttonFillThree {
-	width: 50px;
-	height: 50px;
-	margin-top: 5vh;
-	padding: 0%;
-	display: grid;
-	border-radius: 50px;
-	align-items: center;
-	background-color: #d37d3a;
-	white-space: nowrap;
-	cursor: pointer;
-}
-
-
-.button {
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size:  1.1rem;
-	margin: 0% 14%;
-	display: inline-block;
+.stripe {
+	background-color: rgba(28, 29, 32, 0.175);
+	width: 100%;
+	height: 1px;
+	border: none;
 }
 
 .listofProjects {
 	padding: 0 6%;
 	width: 88%;
-	display: grid;
-	grid-template-columns: repeat(2, 48%);
-	column-gap: 4%;
 	margin-bottom: 10%;
-}
-
-.individualProject {
-	display: grid;
-	align-items: center;
-	z-index: 0;
-	position: relative;
-	grid-template-columns: 90% 10%;
 }
 
 hr {
@@ -88,18 +58,21 @@ hr {
 }
 
 .individualProject h1 {
-	font-size: 2.5rem;
+	margin: 3% 0;
+	font-size: 2rem;
+}
+
+.individualProject:hover h1, .individualProject:hover p {
+	color: #ee6117;
 }
 
 .individualProject p {
+	margin-top: 1.5%;
 	color: #6F7071;
 }
 
-
-
 .individualProject div:nth-child(2) p {
 	font-size: 2rem;
-	color: #37393a;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
@@ -127,18 +100,11 @@ hr {
 	hr {
 		margin: 3vh 0;
 	}
-
-	.emailRequest {
-		height: 55vh;
-	}
-
-	.emailRequest h1 {
-		width: 70%;
-	}
 }
 
 @media screen and (max-width: 1025px) {
 	.headerLanding {
+		padding: 0% 12%;
 		height: 90vh;
 	}
 
@@ -150,23 +116,9 @@ hr {
 		margin: 3vh 0;
 	}
 
-	.emailRequest {
-		height: 55vh;
-		margin-bottom: 10vh;
-	}
-
-	.emailRequest h1 {
-		width: 70%;
-	}
-
 	.headerLanding p {
 		font-size: 1.2rem;
 		width: 80%;
-	}
-
-	.emailRequest h1 {
-		width: 70%;
-		font-size: 2.5rem;
 	}
 
 	.individualProject h1 {
@@ -195,23 +147,6 @@ hr {
 		margin: 3vh 0;
 	}
 
-	.listofProjects {
-		grid-template-columns: 100%;
-		column-gap: 0%;
-		padding: 0 6% 0% 12%;
-		width: 82%;
-	}
-
-	.emailRequest {
-		height: 40vh;
-		margin-bottom: 10vh;
-	}
-
-	.emailRequest h1 {
-		width: 90%;
-		font-size: 2.3rem;
-	}
-
 	.headerLanding p {
 		font-size: 1.2rem;
 		width: 80%;
@@ -230,11 +165,26 @@ hr {
 
 @media screen and (max-width: 500px) {
 	.headerLanding {
-		height: 80vh;
+		height: 60vh;
+		padding: 0% 12%;
+	}
+
+	.heading {
+		display: none;
+	}
+
+	.individualProject {
+		display: block;
+	}
+
+	.stripe {
+		width: 96%;
+		margin: 10% 2%;
 	}
 
 	.headerLanding h1 {
-		font-size: 2.5rem;
+		font-size: 2.4rem;
+		font-weight: 600;
 	}
 
 	.headerLanding p {
@@ -245,23 +195,6 @@ hr {
 
 	hr {
 		margin: 3vh 0;
-	}
-
-	.listofProjects {
-		grid-template-columns: 100%;
-		column-gap: 0%;
-		padding: 0 3% 0% 10%;
-		width: 87%;
-	}
-
-	.emailRequest {
-		height: 35vh;
-		margin-bottom: 10vh;
-	}
-
-	.emailRequest h1 {
-		width: 90%;
-		font-size: 1.6rem;
 	}
 
 	.headerLanding p {

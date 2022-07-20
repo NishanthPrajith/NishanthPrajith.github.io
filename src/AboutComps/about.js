@@ -156,7 +156,7 @@ export default function About() {
     return (
         <div>
             <Helmet>
-                <title>About Me Page | Nishanth Prajith</title>
+                <title>About Me Page • Nishanth Prajith</title>
             </Helmet>
             <motion.div className = "main" variants = {animation} initial = "initial" animate = "final">
 
@@ -201,6 +201,24 @@ export default function About() {
                     <div className = "context">
                         <div className = "resumeData">
                             <div>
+                                <p> Digital Factory - 2019 </p>
+                            </div>
+                            <div>
+                                <h1> Digital Factory - CUNY Career Launch </h1>
+                            </div>
+                            <div>
+                                <h3>Data Science Intern</h3>
+                                <br/>
+                                {/* <ul>
+                                    <li>Designed, developed, maintained, and updated a variety of websites as assigned keeping in mind the UI/UX requirements.</li>
+                                    <li>Oversaw development team to update and maintain the school’s official site and its external client sites.</li>
+                                    <li>Updated web style sheets and pages on a regular basis as required.</li>
+                                </ul> */}
+                            </div>
+                            <hr style={{border: "white 1px solid", backgroundColor: "#dfdfdf", height: "0.5px", width: "100%"}} />
+                        </div>
+                        <div className = "resumeData">
+                            <div>
                                 <p> Thomas A. Edison C.T.E High School, Jamaica, NY - 2017 </p>
                             </div>
                             <div>
@@ -208,6 +226,7 @@ export default function About() {
                             </div>
                             <div>
                                 <h3>Senior Web Design Intern</h3>
+                                <br/>
                                 <ul>
                                     <li>Designed, developed, maintained, and updated a variety of websites as assigned keeping in mind the UI/UX requirements.</li>
                                     <li>Oversaw development team to update and maintain the school’s official site and its external client sites.</li>
@@ -252,6 +271,7 @@ export default function About() {
                             </div>
                             <div>
                                 <h3> Bachelor of Science in Computer Science, GPA: 3.94/4.00</h3>
+                                <br/>
                                 <p><b>Relevant Courses :</b> <i>Algorithms, Data Structures, Introduction to Applied Mathematical Computation, Software Design Lab, 
                                     Database Systems, Introduction to Data Science, Machine Learning, Software Engineering, Senior Design (Applied Machine Learning), 
                                     Numerical Issues in Scientific Programming, Computational Complexity.</i></p>

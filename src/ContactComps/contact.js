@@ -21,7 +21,7 @@ export default function About() {
     return (
         <div style = {{overflow: "none"}}>
             <Helmet>
-                <title>Contact Me Page | Nishanth Prajith</title>
+                <title>Contact Me Page • Nishanth Prajith</title>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Helmet>
             <motion.div variants = {animation} initial = "initial" animate = "final" className = "contact">
