@@ -5,7 +5,6 @@ import {
   useLocation,
 } from "react-router-dom";
 
-
 import MainLoader from './loading/main/mainloader';
 import MoveFrom from './loading/pageLoading/pageChange';
 
@@ -24,13 +23,15 @@ import DotRing from "./RecycleComps/DotRing/DotRing";
 
 import { AnimatePresence } from 'framer-motion';
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import useWindowSize from "./hooks/useWindowSize";
 
 
 function App() {
   const location = useLocation();
+
+  const [check, setCheck] = useState(false);
 
   const size = useWindowSize();
 
@@ -48,17 +49,23 @@ function App() {
 
   var current = "";
 
-
+  useEffect(() => {
+    var v = location.pathname;
+    if (v === "/" || v === "/home" || v === "/about" || v === "/projects" || v === "/contactme") {
+      setCheck(false);
+    } else {
+      setCheck(true);
+    }
+  }, [location]);
 
 
 
   return (
-    <div className="App">
+    <div className="App" style={check ? {backgroundPosition: "bottom", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage : "url(/images/one_error.jpg)"} : {}}>
       <DotRing />
       <NavBar></NavBar>
       
       <div className = "scroll">
-        
         <AnimatePresence>
           <Switch location = {location} key = {location.key}>
             <Route exact path = "/">
@@ -83,10 +90,10 @@ function App() {
             </Route>
           </Switch>
         </AnimatePresence>
-        <Footer />
       </div>
+      <Footer />
       <PersonalPortfolioText />
-      <Version versionNumber = {"v1.5"} />
+      <Version versionNumber = {"v2.0"} />
     </div>
   );
 }

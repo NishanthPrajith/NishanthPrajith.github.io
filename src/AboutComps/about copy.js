@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Helmet } from 'react-helmet';
 import Pdf from '../documents/2.pdf';
-import Logo from './logo';
+
 
 export default function About() {
 
@@ -46,7 +46,7 @@ export default function About() {
             width: "0vh"
         },
         "visible": {
-            width: "100%",
+            width: "85%",
             transition: {
                 ease: "easeInOut",
                 default: {delay: 1.5, duration: 2 },
@@ -171,46 +171,50 @@ export default function About() {
                         <motion.span variants = {letterAnimation}>o</motion.span>
                         <motion.span variants = {letterAnimation}>.</motion.span>
                     </motion.div>
-                    <div className='aboutCircle'>  
-                        <hr className='stripeLine'></hr>
-                        <div className='circle'>
-                            <p className = "logoEarth" style={{color: "white"}}>🌎</p>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div className = "twoColumns">
-                    <div className = "context">
-                        <p>My name is Nishanth Prajith. I am a Computer Science student from NYC aspiring
-                        to be a Data Scientist. I have experience in both front end and back end development.
-                        I enjoy learning new things and trying to experiment with different ideas.
-                        </p>
-                        <br/>
-                        <p style={{color: "#999D9E"}}>Keep Learning and Enjoying!</p>
-                    </div>
                     <motion.div className = "loadingImage" ref = {reftwo} variants = {ImageFirstAnimation} animate = {controlsTwo} initial = "initial">
+
                     </motion.div>
                 </div>
 
-                <div className = "resumeInfo">
+                <div className = "twoColumns">
+                    <div className = "heading">
+                        <p>About Me</p>
+                    </div>
+                    <div className = "context">
+                        <p>My name is Nishanth Prajith. I am a Computer Science student from NYC aspiring
+                        to be a Data Scientist. I have experience in both front end and back end development.
+                        I enjoy learning new things and trying to experiment with different ideas.</p>
+                    </div>
+                </div>
+
+                <div className = "twoColumnsImages">
+                    <motion.div className = "personalImageOne" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
+                    </motion.div>
+                    <motion.div className = "personalImageTwo" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
+                    </motion.div>
+                </div>
+
+                <div className = "twoColumns">
                     <div className = "heading">
                         <p>Experience</p>
                     </div>
                     <div className = "context">
                         <div className = "resumeData">
                             <div>
-                                <p> Digital Factory - CUNY Career Launch - 2019 </p>
+                                <p> Digital Factory - 2019 </p>
                             </div>
                             <div>
-                                <h1>Data Science Intern</h1>
+                                <h1> Digital Factory - CUNY Career Launch </h1>
+                            </div>
+                            <div>
+                                <h3>Data Science Intern</h3>
                                 <br/>
+                                {/* <ul>
+                                    <li>Designed, developed, maintained, and updated a variety of websites as assigned keeping in mind the UI/UX requirements.</li>
+                                    <li>Oversaw development team to update and maintain the school’s official site and its external client sites.</li>
+                                    <li>Updated web style sheets and pages on a regular basis as required.</li>
+                                </ul> */}
                             </div>
-                            <div>
-                                <ul style={{lineHeight: "35px"}}>
-                                    <li>Worked on various Data Science related projects</li>
-                                </ul>
-                            </div>
-                            <br/>
                             <hr style={{border: "white 1px solid", backgroundColor: "#dfdfdf", height: "0.5px", width: "100%"}} />
                         </div>
                         <div className = "resumeData">
@@ -218,15 +222,15 @@ export default function About() {
                                 <p> Thomas A. Edison C.T.E High School, Jamaica, NY - 2017 </p>
                             </div>
                             <div>
-                                <h1>Senior Web Design Intern</h1>
-                                <br/>
+                                <h1> W.B.L (Work-Based Learning) </h1>
                             </div>
                             <div>
-                                <ul style={{lineHeight: "35px"}}>
+                                <h3>Senior Web Design Intern</h3>
+                                <br/>
+                                <ul>
                                     <li>Designed, developed, maintained, and updated a variety of websites as assigned keeping in mind the UI/UX requirements.</li>
                                     <li>Oversaw development team to update and maintain the school’s official site and its external client sites.</li>
                                     <li>Updated web style sheets and pages on a regular basis as required.</li>
-                                    <li>Orchestrated a strategic web informational architecture design to improve the user experience</li>
                                 </ul>
                             </div>
                         </div>
@@ -234,31 +238,26 @@ export default function About() {
                 </div>
 
                 <div className='Language'>
-                    <div className = "resumeInfo">
+                    <div className = "twoColumns">
                         <div className = "heading">
-                            <p>Programming</p>
+                            <p style={{color: "#fff"}}>Programming</p>
                         </div>
-                        <br/>
                         <div className = "context">
                             <div className = "languages">
-                                <p>Flutter</p>
-                                <p>Dart</p>
+                                <p>Flutter/Dart</p>
                                 <p>C++</p>
                                 <p>JAVA</p>
                                 <p>Python</p>
                                 <p>HTML, CSS</p>
                                 <p>Javascript</p>
-                                <p>React.js</p>
+                                <p>React</p>
                                 <p>SQL</p>
-                                <p>PyTorch</p>
-                                <p>NumPy</p>
-                                <p>Pandas</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className = "resumeInfo">
+                <div className = "twoColumns">
                     <div className = "heading">
                         <p>Education</p>
                     </div>
@@ -268,16 +267,15 @@ export default function About() {
                                 <p>The City College Of New York, <i>Grove School of Engineering</i>, New York City, NY - 2019 </p>
                             </div>
                             <div>
-                                <h1> Bachelor of Science in Computer Science</h1>
-                                <p> GPA: 3.94/4.00</p>
+                                <h1> Computer Science </h1>
                             </div>
                             <div>
+                                <h3> Bachelor of Science in Computer Science, GPA: 3.94/4.00</h3>
                                 <br/>
-                                <p><b>Relevant Courses :</b> Algorithms, Data Structures, Introduction to Applied Mathematical Computation, Software Design Lab, 
+                                <p><b>Relevant Courses :</b> <i>Algorithms, Data Structures, Introduction to Applied Mathematical Computation, Software Design Lab, 
                                     Database Systems, Introduction to Data Science, Machine Learning, Software Engineering, Senior Design (Applied Machine Learning), 
-                                    Numerical Issues in Scientific Programming, Computational Complexity.</p>
+                                    Numerical Issues in Scientific Programming, Computational Complexity.</i></p>
                             </div>
-                            <br/>
                             <hr style={{border: "white 1px solid", backgroundColor: "#dfdfdf", height: "0.5px", width: "100%"}} />
                         </div>
                         <div className = "resumeData">
@@ -288,24 +286,27 @@ export default function About() {
                                 <h1> Web Design </h1>
                             </div>
                             <div>
-                                <p> I studied web developement and graphic design, specically HTML, CSS, Adobe Photoshop and Illustrator. </p>
+                                <h3> I studied web developement and graphic design, specically HTML, CSS, Adobe Photoshop and Illustrator. </h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className = "twoColumnsImages">
-                    <motion.div className = "personalImageTwo" ref = {ref} variants = {ImageAnimation} animate = {controls} initial = "initial">
-                    </motion.div>
+                <div className = "quote">
                     <div>
-                        <Logo />
-                        <h3>SkillsUSA Web Design State Champion '17-18</h3>
-                        <p style={{lineHeight: "30px"}}>
-                            I was a two time State Champion at the SkillsUSA Web Design Competition in New York while I was studying in High School. This was my first experience competing in a state level competition and I am very proud of it.
-                        </p>
+                        <p>"The important thing is to not stop questioning. Curiosity has its own reason for existing."</p>
+                        <p>- Albert Einstein</p>
                     </div>
                 </div>
 
+                <div className = "resume"> 
+                    <motion.div variants = {hoverMailAnimation} whileHover = "hover" className = "buttonFillEight">
+                        <a href = {Pdf} target="_blank">
+                            <p className = "button">View Resume &#8594;</p>
+                        </a>
+                    </motion.div>
+
+                </div>
 
             </motion.div>
         </div>

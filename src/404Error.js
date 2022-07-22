@@ -28,13 +28,13 @@ export default function ErrorPage() {
     }
 
 	return (
-		<div>
+		<div className='error'>
 			<Helmet>
-	            <title>Error Page | Nishanth Prajith</title>
+	            <title>Error Page • Nishanth Prajith</title>
 	        </Helmet>
 			<motion.div variants = {animation} initial = "initial" animate = "final" className = "errorPage">
 				<div>
-					<h1>404</h1>
+					<h1>Error 404</h1>
 					<h2>The page you have been looking for has moved, renamed, deleted, or does not exist!</h2>
 					<div className = "buttonDiv">
 						<motion.div variants = {hoverTestAnimation} whileHover = "hover" initial = "initial" className = "buttonFill">

@@ -1,38 +1,58 @@
 .contact {
-	width: 100%;
-	height: 82vh;
+	width: 76%;
+	padding: 0 12%;
 	display: grid;
-	align-items: center;
-	grid-template-columns: 10% 90%;
+	padding-top: 3%;
+	justify-content: center;
+	padding-bottom: 5%;
+}
+
+.contactInfo {
+	display: grid;
+	grid-template-columns: 75% 25%;
 }
 
 .contact div h1 {
-	font-size: 1.5rem;
-	font-weight:  700;
+	font-size: 6rem;
+	font-weight: 700;
 	margin-bottom: 1%;
+	margin-top: 10%;
 }
 
 .contact div h3 {
-	font-size: 3.5rem;
 	font-weight: 700;
 	margin-bottom: 3%;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
 }
 
+.contact div h3 > a::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	height: 0.5px;
+	background: #1C1D20;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: .25s linear;
+	bottom: 0;
+	left: 0;
+}
+
+.contact div h3 > a:hover::after,
+.contact div h3 > a:focus::after {
+	visibility: visible;
+	transform: scaleX(1);
+}
+  
 .contact div h3 a i {
 	font-size: 2.5rem;
 	padding-left: 1%;
 }
 
-.contact div h3 a:hover {
-	color: #ee6117;
-}
-
-.contact div h3 a:hover i {
-	color: #ee6117;
-}
-
 .message {
-	width: 60%;
+	width: 90%;
 	margin-bottom: 5%;
 	font-size: 1.2rem;
 	font-weight: 100;
@@ -41,12 +61,6 @@
 .socialmedia a {
 	margin-right: 8%;
 	font-size: 1.4rem;
-}
-
-.header {
-	writing-mode: vertical-rl;
-	font-size: 0.9rem;
-	transform: scale(-1, -1);
 }
 
 @media screen and (max-width: 1367px) {
@@ -108,10 +122,6 @@
 	.message {
 		width: 85%;
 		font-size: 0.85rem;
-	}
-
-	.header {
-		display: none;
 	}
 
 	.contact div h1 {

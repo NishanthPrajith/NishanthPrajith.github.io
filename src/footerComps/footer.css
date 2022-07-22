@@ -6,6 +6,9 @@ footer {
 	margin-top: 3vh;
 	grid-template-columns: 60% 40%;
 	align-items: center;
+	position: relative;
+	left: 0;
+	bottom: 0;
 }
 
 footer p:nth-child(1) {

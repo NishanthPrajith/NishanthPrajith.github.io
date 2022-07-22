@@ -59,6 +59,17 @@ export default function ProjectId ({match}) {
         }
     }
 
+    function getLanguages(array) {
+        var languages = "";
+        for (var i = 0; i < array.length; i++) {
+            languages += array[i]
+            if (i < array.length - 1) {
+                languages += ", "
+            }
+        }
+        return languages;
+    }
+
     return (
         <div>
             <MoveFrom />
@@ -66,15 +77,24 @@ export default function ProjectId ({match}) {
 
                 <div className = "titleContainer">
                     <div>
-                        <p>{ data[id - 1].tags }</p>
                         <h1 style={{marginBottom: "7vh"}}>{ data[id - 1].title }</h1>
-                        <Link to = {"/projects"} onClick = { changeCursor }>
-                            Go back to all projects
-                        </Link>
+                    </div>
+                    <div className='projectInfo'>
+                        <div className='info'>
+                            <p>TAGS</p>
+                            <hr className='lines'/>
+                            <p>{ data[id - 1].tags }</p>
+                        </div>
+                        <div className='info'>
+                            <p>Language & Framework</p>
+                            <hr className='lines'/>
+                            <p>{getLanguages(data[id - 1].language)}</p>
+                        </div>
                     </div>
                 </div>
 
-                <div className = "portfolioImage" style = {{ backgroundImage : "url(/images" + data[id - 1].imageLink + ")", backgroundColor : data[id - 1].imageColor }}>             
+                <div className = "portfolioImage" style = {{backgroundColor : data[id - 1].imageColor }}>     
+                    <img src={"/images" + data[id - 1].imageLink } alt = {data[id - 1].title} />      
                 </div>
 
                 <div className = "TwoColumns">
@@ -105,20 +125,8 @@ export default function ProjectId ({match}) {
                     <div className = "box">
                     </div>
                     <div className = "title">
-                        <p>Language or <br/>Framework Used</p>
                     </div>  
                     <div className = "projectDesc">
-                        <div className = "desc">
-                            <p>
-                            {
-                                data[id - 1].language.map((language, index) => {
-                                    return (
-                                        <span style={(index > 0) ? {marginLeft: "5%"} : {}} key = {index}>{ language }</span>
-                                    )
-                                })
-                            }
-                            </p>
-                        </div>
                         <div className='projectLinks'>
                         { data[id - 1].projectLink && 
                             <div className = "projectlink">
@@ -150,7 +158,7 @@ export default function ProjectId ({match}) {
                     {
                         data[id - 1].otherImages.map((info, index) => {
                             return (
-                                <div style={{backgroundColor: info.color, height: "60vh", borderRadius: "5px", backgroundImage: "url(/images/" + info.image + ")", backgroundSize: "contain",
+                                <div style={{backgroundColor: info.color, height: "60vh", borderRadius: "5px", backgroundImage: "url(/images" + info.image + ")", backgroundSize: "contain",
                                     backgroundRepeat: "no-repeat", backgroundPosition: "center", display: "grid", alignContent: "flex-end"}}>
                                 </div>
                             );

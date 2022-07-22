@@ -5,31 +5,66 @@
 }
 
 .titleContainer {
-	padding: 0 10%;
-	width: 80%;
+	padding: 0 14%;
+	margin-top: 12%;
+	width: 72%;
 	align-items: center;
-	height: 65vh;
-	display: grid;
 }
 
 .titleContainer h1 {
 	font-size: 6.5rem;
+	color: #1C1D20;
 	font-weight: 500;
 }
 
+.lines {
+	background-color: rgba(28, 29, 32, 0.175);
+	width: 100%;
+	height: 1px;
+	border: none;
+}
+
 .titleContainer p {
-	color: #6F7071;
+	color: #1C1D20;
 	font-size: 1.1rem;
 }
 
+.projectInfo {
+	display: grid;
+	grid-template-columns: repeat(2, 45%);
+	column-gap: 5%;
+	margin-top: 5%;
+}
+
+.portfolioImage {
+	margin-top: 12%;
+}
+
+.info p:nth-child(1) {
+	color: #999D9E;
+	font-weight: 500;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.info p:nth-child(2) {
+	color: #1C1D20;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+
 .portfolioImage {
 	background-color: lightgreen;
-	height: 85vh;
 	width: 100%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	display: grid;
+	justify-content: center;
 }
+.portfolioImage img {
+	width: 100%;
+	transform: scale(0.8);
+}
+
 
 .TwoColumns {
 	display: grid;
@@ -52,7 +87,7 @@
 
 .projectLinks {
 	display: grid;
-	grid-template-columns: repeat(2, 20%);
+	grid-template-columns: repeat(2, 25%);
 }
 
 .projectDesc a {	

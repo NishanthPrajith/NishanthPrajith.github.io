@@ -1,19 +1,86 @@
 .headerLanding h1 {
-	font-size: 6rem;
+	font-size: 5.5rem;
 	font-weight: 500;
 	color: #1C1D20;
 }
 
 .headerLanding {
 	height: 95vh;
-	width: 50%;
+	width: 65%;
 	display: grid;
 	padding: 3% 12%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 	align-items: center;
+}
+
+.btn10{
+    bottom: 0px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+	border-radius: 100px;
+	border: 1px #999D9E solid;
+	padding: 13% 0;
+	font-size: 1.1rem;
+	text-align: center;   
+}
+
+.btn10:hover {
+	color: white;
+	transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+	background-color: #ee6117;
+}
+
+.btn10::before {
+    content: '';
+    width: 100%;
+    height: 0%;
+    border-radius: 100px;
+    display: block;
+    background: #ee6117;
+    position: absolute;
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  } 
+
+.btn10:hover::before, .btn1O:hover::before{
+	opacity:1;
+  border-radius: 50px;
+	height: 100%;
 }
 
 a {
 	text-decoration: none;
+}
+
+.filters {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-gap: 2rem;
+}
+
+.filters p {
+	border-radius: 100px;
+	border: 1px #999D9E solid;
+	padding: 13% 0;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.filters p sup {
+	margin-left: 2%;
+	color: #999D9E;
 }
 
 .listofProjects .headers p {
@@ -36,6 +103,7 @@ a {
 	z-index: 0;
 	position: relative;
 	grid-template-columns: 45% 55%;
+	transition: 0.2s ease-in-out;
 }
 
 .stripe {
@@ -64,6 +132,10 @@ hr {
 
 .individualProject:hover h1, .individualProject:hover p {
 	color: #ee6117;
+}
+
+.individualProject:hover {
+	transform: scale(1.02)
 }
 
 .individualProject p {
