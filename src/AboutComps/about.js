@@ -199,7 +199,7 @@ export default function About() {
                     <div className = "context">
                         <div className = "resumeData">
                             <div>
-                                <p> Digital Factory - CUNY Career Launch - 2019 </p>
+                                <p> Digital Factory - CUNY Career Launch - 2022 </p>
                             </div>
                             <div>
                                 <h1>Data Science Intern</h1>
