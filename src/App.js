@@ -51,7 +51,9 @@ function App() {
 
   useEffect(() => {
     var v = location.pathname;
-    if (v === "/" || v === "/home" || v === "/about" || v === "/projects" || v === "/contactme") {
+    if (v === "/" || v === "/home" || v === "/about" || v === "/contactme") {
+      setCheck(false);
+    } else if (v.includes("/project")) {
       setCheck(false);
     } else {
       setCheck(true);
