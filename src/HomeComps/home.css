@@ -114,10 +114,10 @@
 	grid-column: span 6 / auto;
 	background-color: #626494;
 	border-radius: 15px;
-	background-image: url("../images/four.png");
-	background-size: 55%;
+	background-image: url("../images/carDetection02.png");
+	background-size: 26%;
 	background-repeat: no-repeat;
-	background-position: bottom right;
+	background-position: 90% -10%;
 }
 
 .projectThree {
@@ -126,10 +126,10 @@
 	grid-column: span 9 / auto;
 	background-color: #baaca1;
 	border-radius: 15px;
-	background-image: url("../images/eight.png");
-	background-size: 50%;
+	background-image: url("../images/eCommerce_a.png");
+	background-size: 38%;
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: 95% -5%;
 }
 
 @media screen and (max-width: 1367px) {

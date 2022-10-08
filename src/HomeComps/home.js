@@ -38,14 +38,14 @@ export default function Home() {
                 <div className = "landingPage">
                     <div className = "intro">
                         <p>University Student & <br/>
-                            aspiring Data Scientist </p>
+                            aspiring Software Engineer </p>
                         <h1>Nishanth <span>Prajith</span></h1>
                     </div>
                 </div>
 
                 <div className = "descHome">
                     <p>
-                        Learning Data Science and programming by working on
+                        Learning Software Engineering and Data Science by working on
                         projects that help me learn new things and make my skills even
                         sharper.
                     </p>
@@ -56,18 +56,26 @@ export default function Home() {
                     <h1>projects</h1>
 
                     <div className="wrapper">
-                      <div className = "projectOne">
-                        <p>UI - Flutter - Animation</p>
-                        <h2> Convex Hull Visualization </h2>
-                      </div>
-                      <div className = "projectTwo">
-                        <p>UI - Flutter - Animation</p>
-                        <h2> Events App UI </h2>
-                      </div>
-                      <div className = "projectThree">
-                        <p>UI - Flutter - Dribble - Transition - Animation</p>
-                        <h2> Fluid Card UI </h2>
-                      </div>
+                        <Link to={"/projects/2"} onClick={runFunction} className = "projectOne">
+                            <div>
+                                <p>Machine Learning - Python - pandas - numpy - scikit-learn</p>
+                                <h2>California Wildfire Detection</h2>
+                            </div>
+                        </Link>
+
+                        <Link to={"/projects/1"} onClick={runFunction} className = "projectTwo">
+                            <div>
+                                <p>UI - Flutter - Machine Learning - PyTorch - Firebase</p>
+                                <h2>Car Detection App</h2>
+                            </div>
+                        </Link>
+
+                        <Link to={"/projects/3"} onClick={runFunction} className = "projectThree">
+                            <div>
+                                <p>Firebase - React.js - HTML - CSS - Javascript</p>
+                                <h2>E-commerce website</h2>
+                            </div>
+                        </Link>
                     </div>
 
                     <div className = "buttonLinkContainer">
