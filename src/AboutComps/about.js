@@ -208,7 +208,7 @@ export default function About() {
                             <div>
                                 <ul style={{lineHeight: "35px"}}>
                                     <li>Worked with Digital Marketing team to engage clients and understand requirements and goals.</li>
-                                    <li>Designed and built updated documentation.</li>
+                                    <li>Wrote documentation on how to install and run the DWELL app.</li>
                                     <li>Developed tools to automate the process of collect, validate, manipulate, and perform exploratory data analysis tasks on analytical data sets.</li>
                                     <li>Communicate newly discovered insights based on analysis to the Digital Marketing team, clients and board members in a manner that they can leverage in their business.</li>
                                 </ul>
